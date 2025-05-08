@@ -1,6 +1,6 @@
 \documentclass{article}
 \title{Cartesian closed categories and the price of eggs}
-\author{Jane Doe}
+\author{INSERTAUTHORSLIST}
 \date{September 1994}
 \usepackage{mathtools, amssymb, amsthm, mathrsfs}
 \usepackage{graphicx}
