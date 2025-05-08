@@ -1,0 +1,10 @@
+\documentclass{article}
+\title{Cartesian closed categories and the price of eggs}
+\author{Jane Doe}
+\date{September 1994}
+\usepackage{mathtools, amssymb, amsthm, mathrsfs}
+\usepackage{graphicx}
+\graphicspath{ {../img/} }
+\begin{document}
+   \maketitle
+   Hello world!
