@@ -47,11 +47,7 @@ The file should be of the following format:
 
 Insert code here.
 ```
-And add yourself to CONTRIBUTORS in the following format
-```
-\and
-Firstname Lastname \\
-```
+And add yourself to CONTRIBUTORS file.
 
 ## LaTeX cheat sheet
 
