@@ -1,0 +1,78 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of April 2025}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Least squares regression line}
+  Draw the data set into a scatter diagram and mark mean point. $(\overline{x}, \overline{y})$\\
+  Draw a line passing mean point and balanced points by eye 'the best way'.\\
+  Use calculator regression line $y=mx+b$\\
+  Interpolation is predicting a data value within the range of original data.\\
+  Extrapolation means predicting a data value out of range.\\ 
+  Example.\\
+  a) $y=-0.134x + 20.9$ (3.sf)\\
+  b) If age is 28 years, then substitute\\
+  $y=-0.134\cdot 28+20.9$\\
+  =17.\\
+  c) $r=-0.756$\\
+  d) It is negative, meaning negative correlation, strong correlation.\\
+  
+  by Eye mthod =without GDC.\\
+  line passes point $(\overline{x}, \overline{y})$\\
+  and slope m$=\frac{S_{xy}}{(S_x)^2}$ and r=$\frac{S_{xy}}{S_x\cdot S_y}$\\
+  where $S_{xy}=\sum (x\cdot y)-\frac{\sum x\cdot \sum Y}{n}$\\
+  $(S_x)^2=\sum (x^2) - \frac{(\sum x)^2}{n}$\\
+  Example paper 1.\\
+  Age    number of object. xy product\\
+  15    17      255\\
+  21    20      420\\
+  36    15      540\\
+  40    16      640\\
+  44    17      748\\
+  55    12      660\\
+  $\sum x=15+21+36+40+44+55=211$\\
+  $\sum y=17+20+15+16+17+12=97$\\
+  $\sum (xy)=255+420+540+640+748+660=3263$\\
+  $\sum (x^2)=15^2+21^2+36^2+40^2+44^2+55^2=8523$\\
+  slope $m=\frac{\sum (x\cdot y)-\frac{\sum x\cdot \sum y}{n}}{\sum (x^2)-\frac{(\sum x)^2}{n}}$\\
+  $\frac{3263-\frac{211\cdot97}{6}}{8523-\frac{211^2}{6}}$\\
+  $m=-0.134$\\
+  and a point $(\overline{x}, \overline{y})$\\
+  $\overline{x}=\frac{\sum x}{n}=211/6=35.1667$\\
+  $\overline{y}=\frac{\sum y}{n}=97/6=16.11667$\\
+  $y-\overline{y}=m\cdot (x-\overline{x})$\\
+  $y-16=-0.134(x-35)$\\
+  $-0.134\cdot35.17+16.17=20.9$\\
+  $y=-0.134x\cdot 20.9$\\
+
+  \section{Counting principles}
+  1) factorial notation\\
+  How many ways there is to organize n objects into a queue with an order (=jono).\\
+  $n!=1\cdot2\cdot3\cdot...\cdot (n-1) \cdot n$.\\
+  Example $5 books$ can be organized into a bookshelf.\\
+  $5!=120$.\\
+  $5\cdot4\cdot3\cdot2\cdot1=120$.\\
+  2) permutation.\\
+  If you have n objects, how many ways there is to organize r object into a queue (or row with order).\\
+  $n\cdot (n-1)\cdot ...\cdot (n-(r-1))=\frac{n!}{(n-r)!}=nPr(n,r)$\\
+  $Find nPr(12,3)=1320$.\\
+  so there is 1320 possible ways to organize secretary, chairman, vice chairman from 12 students.\\
+  3) combination\\
+  If you have n objects, how many ways there is to organize r object into a collection without order.\\
+  $=nCr(n,r)$.\\
+  example 12 students and 3 of them can go by car, so there is $nCr(12,3)=220$ ways to choose the students who go by car.\\ 
+  HL page 55 example 45.\\
+
+  HL page 57 excercises.\\
+  1. $9!+8!=403200$\\
+  $7!-6!=4320$\\
+  $6!+5!=840$\\
+  $(n+1)!-n!=n!   ((n+1) -1)$\\
+  $n\cdot n!$\\
+  
+
+   
+\end{document}

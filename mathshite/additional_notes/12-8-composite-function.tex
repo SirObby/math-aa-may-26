@@ -1,0 +1,69 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{12th of August 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+  
+  \subsection{Hmoework}
+  hl p85 ex1,c\\
+  $y=f(x)=3x^2-12x-5$\\
+  concavity up since $a=3>0$\\
+  domain = $\mathbb{R}$
+  range=$x=\frac{-b}{2a}=\frac{-(-12)}{2\cdot3}=2$\\
+  $y=f(2)=3\cdot2^2-12\cdot2-5=-17$\\
+  range = $[-17,\infty]$\\
+  hl p93 ex2\\
+  partial fraction: $\frac{4-x}{x^2+x-2}=\frac{A(x-zeroe)+B(x-zeroe)}{(x-0)\cdot(x-zero)}$\\
+  $x^2+x-2=0$\\
+  $a=1,b=1,c=-2$\\
+  $x=\frac{-b\pm\sqrt{b^2-4a}}{2a}$\\
+  $\frac{-1\pm\sqrt{1^2-4\cdot1\cdot(-2)}}{2}$\\
+  $x=1 AND x=-2$\\
+  $Ans: \frac{4-x}{x^2+x-2}=\frac{A\cdot(x-1)+B(x-(-2))}{(x-1)\cdot(x-(-2))}$\\
+  and $4-x=Ax-a+Bx+2B$\\
+  $\begin{cases}
+    4=-a+2b\\-x=ax+bx ||:x
+  \end{cases}$\\
+  $\begin{cases}
+    4=-a+2b\\
+    -1=a+b
+  \end{cases}$\\
+  $1=b$
+  $a+1=-1\\a=-2$\\
+  Answer: $\frac{-2\cdot(x-1)+1\cdot(x+2)}{(x-1)\cdot(x+2)}=\frac{-2}{x+2}+\frac{1}{x-1}$ is partial fraction.
+  
+
+  \section{Composite function}
+  HL Chapter 2.4, p 109\\
+  A composite function $f\circ g(x)=f(g(x))$\\
+  applies one function (outer f) to the result of another (inner g)\\
+  called 'f ball g'\\
+  Example\\
+  a) $f(x)=\sqrt{x-2}+3$ and $and g(x)=\frac{4x}{7}$\\
+  $f\circ g(x)=f(g(x))=f(\frac{4x}{7})$\\
+  $\sqrt{\frac{4x}{7}-2}+3$\\
+  b) but $g\circ f(x)=g(f(x))=g(\sqrt{x-2}+3)=\frac{4\cdot(\sqrt{x-2}+3)}{7}$\\
+  Note:  $f\circ g\neq g\circ f$\\
+  
+  \section{hl p111}
+  1. a) $f(x)=3x; g(x)=\sqrt{x}$\\
+  i) $g(f(1))=\sqrt{3\cdot1}=\sqrt{3}$\\
+  ii) $f(g(2))=3\cdot\sqrt{2}$\\
+  iii) $f(g(x))=3\cdot\sqrt{x}$\\
+  iv) $g(f(x))=\sqrt{3x}$\\
+  b. $f(x)=5-3x; g(x)=x^2+4$\\
+  i) $g(f(1))=(5-3\cdot1)^2+4=8$\\
+  ii) $f(g(2))=5-3\cdot(8)=-19$\\
+  iii) $f(g(x))=5-3*(x^2+4)$\\
+  iv) $g(f(x))=(5-3x)^2+4$\\
+  c. $f(x)=x+1;g(x)=\sqrt{2x-1}$\\
+  2. i) a) $f(x)=x^2+x;g(x)=2-3x$\\
+  domain = $\mathbb{R}$\\
+  range = 
+  
+  
+
+   
+\end{document}

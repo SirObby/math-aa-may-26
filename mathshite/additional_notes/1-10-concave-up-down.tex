@@ -1,0 +1,53 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{1st of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{concave up/down}
+  f''(x)<0 when f concaves down (f kaatuu alas)\\
+  f''(x)>0 when f concaves up (f kaatuu ylös)\\
+  if f''(x)=0 and f'' sign changes then there is an inflexion point\\'
+  
+  If f'(x)= and f''(x)<0 then f has max\\
+  and f'(x) and f''(x)>0 then f has min.\\
+
+  Example: Find the extreme points of $f(x)=x^3-3x^2-6x-7$\\
+  $f'(x)3x^2-6x-6$\\
+  so $3x-6x-6=0 ||:3$\\
+  $x^2-2x-3=0$\\
+  $a=1,b=-2,c=-2$\\
+  $x=\frac{-(-2)\pm\sqrt{(-2)^2-4\cdot1\cdot(-2)}}{2\cdot1}$\\
+  $x=\frac{2\pm2\sqrt{3}}{2}=1\pm\sqrt{3}$\\
+  and\\
+  1) $f''(x)=D(3x^2-6x-6)=6x-6-0$ is a line with zeroe x=1\\
+  point $x=1+\sqrt{3} has f''(1+\sqrt{3})>0$ so that is minimum\\
+  2) point $x=1-\sqrt{3} has f''(1-\sqrt{3})<0$ so f concanves down and f has maximum.\\
+  3) point x=1 is inflexion since $f''(1)=0 and sing changes.$\\
+  ex hl p 273 all
+  \subsection{hl p 273 all}
+  1. $y=x^3-x$\\
+  $f'(x)=3x^2-1$\\
+  $3x^2-1=0$\\
+  $a=3,b=0,c=-1$\\
+  $x=\frac{-0\pm\sqrt{0^2-4\cdot 3\cdot -1}}{2\cdot a}$\\
+  $x=\frac{\pm\sqrt{12}}{6}$\\
+  $x=\pm6\cdot\sqrt{12}$
+  $f''(x)=D(3x^2-1)=6x$\\
+  a. $f''(0)=0$\\
+  b. $x=+6\cdot\sqrt{12}>0 is minimum$\\
+  c. $x=-\cdot\sqrt{12}<0 is maximum$\\
+  2. $y=x^4-3x+2$\\
+  $4x^3-3x+2$\\
+  
+
+  
+  
+
+
+  
+
+   
+\end{document}

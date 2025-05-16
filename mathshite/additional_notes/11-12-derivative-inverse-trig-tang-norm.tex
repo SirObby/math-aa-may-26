@@ -1,0 +1,40 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Derivative of inverse trigonometric functions + tangents and normals.}
+  p 427\\
+  Derivative of a function is the gradient (=slope) of tangent.\\ 
+  $slope of tangent\cdot slope o fnormal=-1$\\
+  tangent line $y-y_0=m\cdot(x-x_0)$\\
+  where m=slope=$f'(x_0)$\\
+  $y_0=f(x_0)$\\
+
+  HL only: see formula booklet:\\
+  $D arcsin (x)=\frac{1}{\sqrt{1-x^2}}$\\
+  $D arccos (x)=\frac{-1}{\sqrt{1-x^2}}$\\
+  $D arctan (x)=\frac{1}{1+x^2}$\\
+  Example: $f(x)=arccos(2x)$\\
+  $f'(x)=\frac{-1}{\sqrt{1-(2x)^2}}\cdot D(2x)$ chain rule.\\
+  $=\frac{-2}{\sqrt{1-4x^2}}$\\
+  b) $D arctan (2x+1)$\\
+  $\frac{1}{1+(2x+1)^2}\cdot D (2x+1)=\frac{2}{1+4x^2+4x+1}=\frac{1}{2x^2+2x+1}$\\
+  hl p 428: 1,2,3 only a,b\\
+  +p431 ex 1\\
+  1. a) $f(x)=arccos(2x)$\\
+  $f'(x)=\frac{-1}{1-(2x)^2}\cdot D(2x)$\\
+  $\frac{-2}{1-4x^2}$\\
+  b) $f(x)=arcsin \frac{3}{2}x$\\
+  $f'(x)=\frac{1}{1-(\frac{3}{2}x)^2}\cdot D(\frac{3}{2}x)$\\
+  $\frac{3}{2}\cdot\frac{1}{1-(\frac{3}{2}x)^2}$\\
+  2. a) $y=2x arccos x$\\
+  $y'=2\cdot arccos x+\frac{-1}{\sqrt{1-x^2}}\cdot2x$\\
+  b) $y=\frac{arccos x}{2x}=\frac{2x\cdot \frac{-1}{\sqrt{1-x^2}-arccos x\cdot 2}}{2x^2}$\\
+  
+
+   
+\end{document}

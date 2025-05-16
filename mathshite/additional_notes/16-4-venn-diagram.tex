@@ -1,0 +1,55 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of April 2025}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{venn diagram}
+  hl p 690\\
+  1) $P(A)=1-P(A')$\\
+  2) mutually exclusive set has intersection empty like $P(A\cap B)=0$\\
+  or non-mutually exclusive $P(A\cap B)=P(A)+P(B)-PP(A\cup B)$\\
+  and addition rule $P(A\cup B)=P(A)+P(B)-P(A\cap B)$\\
+  If A is a subset of B then $P(B\setminus A)=P(B)-P(A)$\\
+  For independent events $P(A\cap B)=P(A)\cdot P(B)$\\
+  independent means that $P(A|B)=P(A)$\\
+  $P(B|A)=P(B)$\\
+  where $|$ means in codition that, so that, we know that...\\
+  Example. A card is drawn from a deck. What is probability to get\\
+  a) either a diamond or ace?\\
+  b) a diamond of ace or spades?\\
+  deck has 52 cards.\\
+  13 diamonds.\\
+  4 aces\\
+  1 card is both.\\
+  a) P(diamond or ace)=$P(A\cup B)=P(A)+P(B)-P(A\cap B)=\frac{13}{52}+\frac{4}{52}-\frac{1}{52}=\frac{4}{13}$\\
+  b) ace of spades is 1 card.\\
+  $P(ace of spades or diamond)=P(A\cup C)=\frac{1}{52}+\frac{13}{52}-0=\frac{7}{26}$\\
+  since A and C are muually exclusive.\\
+
+  eggcercise:\\
+  On a monday or thursday, Ceren paints a masterpiece with a probability of $\frac{1}{5}$ on any other day, the prob is $\frac{1}{100}$ Find the probability that on one day chosen at random, she will paint a masterpiece.\\
+  $P(Mon or tuesd)=\frac{1}{5}$\\
+  $P other days)=\frac{1}{100}$\\
+  a) $P(she paints a masterpiece)=P(Monday or Tuesday and maserpiece)+P(other and masterpiece)=\frac{2}{7}\cdot\frac{1}{5}+\frac{5}{7}\cdot\frac{1}{100}$\\
+  $=\frac{9}{140}=0.0643$\\
+  1,2,3 and 4, are thrown together.\\
+  a) What is the most likely total score on the faces pointing downwards?\\
+  $P=\frac{4}{16}=\frac{1}{4}$ for 5\\
+  3. In the venn diagram $\cup=pupils in a clas of 15, G=girls,S=swimmers,F=pupils who were born on a friday.$\\
+  A pupil is chosen at random. Find the probability that the pupil:\\
+  a) can swim\\
+  $P(S)=\frac{n(S)}{n(\cup)}=\frac{2+2+3+2}{15}=\frac{3}{5}$\\
+  b) is a girl swimmer\\
+  $P(girl swimmer=\frac{n(g\cap s))}{n(\cup)}=\frac{3+2}{15}=\frac{1}{3}$\\
+  Two pupil chosen are chosen at random. Find the probabilty that.\\
+  d) $P(both are boys)=\frac{15-(1+3+3+2)}{15}\cdot\frac{4}{14}=\frac{2}{21}$\\
+  HL p 628 ex 2-3-6\\
+  2. \\
+  b) $P(of choosing zip lining)=\frac{32}{50}$\\
+  c) $P(orienteering and zip lining)=\frac{32}{50}+\frac{26}{50}-\frac{8}{50}?$
+
+   
+\end{document}

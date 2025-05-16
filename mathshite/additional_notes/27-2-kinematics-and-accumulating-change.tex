@@ -1,0 +1,33 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Kinematics and accumulating change}
+  hl p 528\\
+  Displacement $s(t)=\int v(t) dt=\int\int a(t) dt dt$\\
+  Velocity $v(t)=\int a(t) dt$\\
+  distance travelled = $\int_{time_1}^{time_2}|v(t)|dt$\\
+  Example.\\
+  Find the a) displacement b) distance travelled y the particle in the interval [0,3] and $v(t)=t-t^3$\\
+  a) displacement $\int_{0}^{3} (t-t^3)dt$\\
+  $[]\frac{t^2}{2}-\frac{t^4}{4}]=\frac{3^2}{2}-\frac{3^4}{4}-(\frac{0^2}{2}-\frac{0^4}{4})$\\
+  $\frac{9}{2}-\frac{81}{4}=\frac{9\cdot2}{4}-\frac{81}{4}=\frac{18-81}{4}$\\
+  $(18-81)/4)=15.75$ meters to left / down\\
+  b) Distance travelled=$\int_{0}^{3}|t-t^3|dt=16.25$\\
+  c) Sketch the motion diagram.\\
+  Totald istance $16.25m$\\
+  $0.25m$ forwards, and $15.75m$ backwards.\\
+  $v(t)=0$ at turning point.\\
+  $t-t^3=0$\\
+  $t\cdot (1-t^2)=0$\\
+  $t=0$ or $1-t^2=0$\\
+  $1=t^2$ so $t=\pm1$\\
+  hl p 532 ex 8D:1-9\\
+  
+
+   
+\end{document}

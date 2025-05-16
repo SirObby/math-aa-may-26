@@ -1,0 +1,61 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  $\int (ax+b)^ndx=\frac{(ax+b)^{n+1}}{a(n+1)}+c, c,n\in\mathbb{R}$\\
+  $\int sin(ax+b)dx=-\frac{cos(ax+b)}{a}+c ,c\in\mathbb{R}$\\
+  $\int cos(ax+b)dx=\frac{sin(ax+b)}{a}+c, c\in\mathbb{R}$\\
+  $\int sec^2(ax+b)dx=\frac{tan(ax+b)}{a}+c,c\in\mathbb{R}$
+
+  \section{Initial condition}
+  hl p 448\\
+  Intiial condition tells you value at t=0 and allows you to solve for C; constant of integration.\\
+  Bondary condition such as $f(1)=0$ allows you to solve for C.\\
+  $D Distance = speed$\\
+  $\int speed dt=displacement +C$\\
+  $D speed = acceleration$\\
+  $\int acceleration dt=speed + C$\\
+  Example\\
+  A particle moves it+n a straight line with acceleration $a(t)=8t+3$\\
+  Intitially, its velocity is $1 m/s$ and displacement 5m\\
+  Find v(v) and s(t)\\
+  a) $v(t)=\int (8t+3)dt = 8\cdot\frac{t^{1+1}}{2}+3\cdot t+C$\\
+  $=4t^2+3t+C$\\
+  initially $v(0)=1$ substitute\\
+  $4\cdot 0^2+3\cdot 0+C=1$\\
+  $c=1$\\
+  Ans $v(t)=4t^2+3t+1$\\
+  b) $displacement s(t)=\int v(t) dt$\\
+  $\int(4t^2+3t+1)$\\
+  $4\cdot\frac{t^3}{3}+3\cdot\frac{t^2}{2}+1\cdot t+C$\\
+  initially $s(0)=5$ substitute\\
+  $s(t)=4\cdot\frac{0^3}{3}+3\cdot\frac{0^2}{2}+1\cdot0+C=5$\\
+  $C=4$\\
+  Ans: $s(t)=\frac{4}{3}t^3+\frac{}{}$
+  \subsection{excercise 10E (sl book I think)}
+  1. Let $h'(t)=6t^2+1$ Given $h(2)=8$ find $h(t)$\\
+  $\frac{6t^3}{6\cdot3}+x+C$\\
+  $\frac{6\cdot2^3}{6\cdot3}+2+C=8$\\
+  $\frac{12^3}{18}+C=6$\\
+  $2\cdot 2^3+2+C=8$\\
+  $C=-10$\\
+  Ans: $h()=2t^3+t-10$\\
+  2. $C=5$\\
+  Ans: $y=(2x-3)^4+5$\\
+  3. $a(t)=4t+1$\\
+  v(t)=?\\
+  $v't(0)=2$\\
+
+  %a) $a'(0)=2 ms^{-1}$\\
+  %$a'(t)=4$\\
+  %$\int 4 dx=4x+C$\\
+  %$C=8$\\
+  %displacement=$4x+C$\\
+
+  
+   
+\end{document}

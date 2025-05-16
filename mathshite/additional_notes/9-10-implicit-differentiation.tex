@@ -1,0 +1,53 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{9th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Implicit differentiation}
+  use for relations (not only funcitons) with many letters\\
+  like in chain rule:\\
+  $D U (y) = y'(y)\cdot \frac{dy}{dx}$ where $y=f(x)$\\
+
+  Example a) Differentiate with respect to x\\
+  $x^4+y^4-8\cdot x\cdot y =0$\\
+  (is not a function, intersects Y twice.)\\
+  $\frac{d}{dx}(x^4+y^4-8\cdot x\cdot y=0)$\\
+  $4x^3+4y^3\cdot (\frac{dy}{dx})-8(1\cdot y+x\cdot (\frac{dy}{dx}))=0$\\
+  where $y=f(x)$ and product rule.\\
+  $4y^3\cdot(\frac{dy}{dx})-8\cdot x\cdot (\frac{dy}{dx})=-4x^3+8y$\\
+  $\frac{dy}{dx}\cdot(4y^3-8x)=8y-4x^3$\\
+  $\frac{dy}{dx}=\frac{8y-4x^3}{(4y^3-8x)}$\\
+  b) Find the equation of tangent at point (1,2).\\
+  $slope=gradient=\frac{dy}{dx}(1,2)=\frac{8\cdot 2-4\cdot 1^3}{(4\cdot 2^33-8\cdot1)}$\\
+  $\frac{16-4}{4\cdot8-8}=\frac{12}{24}=\frac{1}{2}$\\
+  equation of tangent $y-y_0=m\cdot (x-x_0)$\\
+  $y-2=\frac{1}{2}\cdot(x-1)$\\
+  Ans: $y=\frac{1}{2}x+\frac{3}{2}$\\
+  Excercise 4U 290\\
+  $1. a) \frac{dy}{dx}=?$\\
+  $2y^2-3x^2=1 || \frac{d}{dx}$\\
+  $2\cdot 2y^1\cdot (\frac{dy}{dx})-3\cdot2x=0 || solve \frac{dy}{dx}$\\
+  $4y\cdot (\frac{dy}{dx})=6x ||:4y$\\
+  $\frac{dy}{dx}=\frac{6x}{4y}$\\
+  Ans: $\frac{dy}{dx}=\frac{3x}{2y}$\\
+  b) $y^3=x^4-1 || \frac{d}{dx}$\\
+  $3y^2\cdot(\frac{dy}{dx})=4x^3-0$\\
+  $\frac{dy}{dx}=\frac{4x^3}{3y^2}$\\
+  c) $2x^2+4x^2-3x+4y=0 || \frac{d}{dx}$\\
+  $2\cdot 2x^1+4\cdot 2y^1\cdot (\frac{dy}{dx})-3+4\cdot1\cdot(\displaystyle\frac{dy}{dx})=0$
+  $8y\cdot(\frac{dy}{dx})+4\cdot(\frac{dy}{dx})=3-4x$\\
+  $\frac{dy}{dx}=3-4x$\\
+  $\frac{dy}{dx}=\frac{3-4x}{8y+4}$
+  d) $x^2-3xy+2y^2=5$\\
+  $2x^1-3\cdot(1\cdot y+x\cdot(\frac{dy}{dx}))+2\cdot2y^1\cdot(\frac{dy}{dx})=0$\\
+  $2x-3y-3x(\frac{dy}{dx})+4y(\frac{dy}{dx})=0$\\
+  $(4y-3x)(\frac{dy}{dx})=3y-2x$\\
+  e) $(x+y)^2=2-3y$\\
+  
+  
+
+   
+\end{document}

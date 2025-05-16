@@ -1,0 +1,54 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Substitution method of integration.}
+  HL p 446\\
+  integration is antidifferentiation\\
+  $D sin(a\cdot x+b)=cos(ax+b)\cdot D(ax+b)=cos(aax+b)\cdot a$\\
+  so $\int cos(ax+b) dx = \frac{1}{a}\cdot\int (a\cdot cos(ax+b))=\frac{1}{a}\cdot sin(ax+b)+C$\\
+  Note that innerfunction must have derivative before integration and the integration takes it off.\\
+  $D cos(ax+b)=-sin(ax+b)\cdot D(ax+b)=-a\cdot sin(ax+b)$\\
+  so $\int sin(ax+b)dx=\frac{1}{-a}\int (-a\cdot sin(ax+b))dx=\frac{1}{a}cos(ax+b)+C$\\
+  $D e^{f(x)}=e^{f(x)}\cdot f'(x)$ so $\int (e^{f(x)}\cdot f'(x))dx =e^{f(x)} +C$\\
+  in general $\int (f(g(x))\cdot g'(x))dx=F(g(x))+C$\\
+  where $F'(x)=f(x)$\\
+  u-substitution method\\ 
+  $\int u(\frac{du}{dx})dx=U()+C$\\
+  HL only\\
+  $\int m^{ax+b} dx=m^{ax+b}\cdot(\frac{1}{ln(m)\cdot a})+C$\\
+  $\int sec^2(ax+b)dx=\frac{tan(ax+b)}{a}+C$\\
+  some HL substitutions:\\
+  $\frac{1}{\sqrt{a^2-x^2}}$ and substitute $x=a\cdot sin(u)$\\
+  $\frac{1}{\sqrt{x^2-a^2}}$ and substitute $x=a\cdot sec(u)$\\
+  $\frac{1}{\sqrt{a^2+x^2}}$ and substitute $x=a\cdot tan(u)$\\
+  1) Work out the indefined integral with u, substitute back to x and evaluate\\
+  Or 2) change the limits from x into u and do the definite integral.\\
+  Example a)\\
+  a) $\int (\frac{arcsin(x)}{\sqrt{1-x^2}})dx=\int (\frac{1}{\sqrt{1-x^2}\cdot (arcsin(x))^1})=\int u =du=$
+  subst $u=arcsin(x)$ and $du=\frac{1}{\sqrt{1-x^2}}$\\
+  =$\frac{(arcsin(x))^2}{2}+C$\\ 
+  HL $\int \frac{f'(x)}{f(x)}dx=ln|f(x)|+C$\\
+  
+  HL p 450 ex 1e, and 11c and p 495, p499, p503\\
+  
+  1e. $\int (e\cdot (sin(\frac{x}{2}))^1\cdot cos(\frac{x}{2}))dx=2\cdot \int(2\cdot(\frac{1}{2}cos(\frac{1}{2}x))\cdot (sin(\frac{x}{2}))^1)dx$\\
+  $4\cdot \frac{(sin(\frac{x}{2}))^2}{2}+C=2\cdot sin^2(\frac{x}{2})+C$\\
+  inner function $D sin(\frac{1}{2}\cdot x)=cos(\frac{1}{2}\cdot x)\cdot(\frac{1}{2})$\\
+  11c) $\int(3\cdot cos(5x+2)+4\cdot sin(5x+2))dx$\\
+  $\frac{3}{5}\int 5\cdot cos(5x+2))dx+ \frac{4}{5}\int(5\cdot sin(5x+2))dx$\\
+  inner function D (5x)=5 that goes off!\\
+  $=\frac{3}{5}(sin(5x+2))+\frac{4}{5}(-cos(5x+2))+C$\\
+  hl p 495, p499, p504 ex1 only\\
+  1a) $\int(x^3-sec^2x)dx=\frac{x^5}{4}-tan(x)+C$\\
+  1b) $\int (3e^x+\frac{1}{2x}+sin(x)dx=3\cdot e^x+\frac{1}{2}\cdot ln(x)-cos(x)+C$
+  1c) $\int (2\cdot sin(x)\cdot cos(x)dx)= 2\cdot \int(sin(x)^1\cdot cos(x)dx$\\
+  $2\cdot \frac{sin^2x}{2}+C=sin^2x+C$
+  1d) $\int(tan^2(3x+1))dx=$
+
+   
+\end{document}

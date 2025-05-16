@@ -1,0 +1,43 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{more indefined integrals}
+  $\int ((f(x)^n)\cdot f'(x))dx=\frac{(f(x))^{n+1}}{n+1}+C$\\
+  Note that inner function's derivative leaves off!\\
+  Example $\int (4x-5)^7 dx$\\
+  $=\frac{1}{4}\cdot \int(4\cdot (4x-5)^7)dx$\\
+  $=\frac{1}{4}\cdot\frac{(4x-5)^8}{8}+C=\frac{(4x-5)^8}{32}+C$\\
+  $\int \frac{1}{x}dx= ln(x)+C, x>0$\\
+  $\int \frac{1}{ax+b}dx=\frac{1}{a}\int(a\cdot \frac{1}{(a\cdot x+b)})dx$\\
+  $=\frac{1}{a}ln|ax+b|+C$\\
+  HL: $\int \frac{f'(x)}{f(x)} dx=\int (f'(x)\cdot(\frac{1}{f(x)}))$\\
+  =$ln|f(x)|+C$\\
+  $\int e^x dx=e^x+C$\\
+  $\int e^{(ax+b)} dx=\frac{1}{a}\int (a\cdot e^{ax+b})$\\
+  $=\frac{1}{a}e^{ax+b}+C$\\
+  hl: $\int(e^{f(x)}\cdot f'(x))dx=e^{f(x)}+C$\\
+  Example $\int((3x^2-5)^6\cdot x)dx$\\
+  inner function $D (3x^2-5)=6x$\\
+  $\frac{1}{6}(6x\cdot(3x^2-5)^6)dx=\frac{1}{6}\cdot\frac{(3x^2-5)^7}{7}+C$\\
+  $=\frac{(3x^2-5)^7}{42}+C$\\
+  NOTE! Multiplication comes from inner functions deivate\\
+  b) $\int(\frac{x^2}{(5x^3-7)+e^{9x}})dx$\\
+  inner function $D (5\cdot x^3-7)=15x^2$\\
+  inner fucntion $D (9x)=9$\\
+  $\frac{1}{15}\int(15x^2\cdot(\frac{1}{5x^3-7}))dx+\frac{1}{9}\int(9\cdot e^{(9x)})dx$\\
+  $\frac{1}{15} ln(5x^3-7)+\frac{1}{9}e^{9x}+C$\\
+  hl p 450 7A: ex 2c,2d,2e and 11 all\\
+  2c\\
+  $(x^2-x+2)^2$\\
+  $\int(x^2-x+2)^2 dx=\frac{x^5}{5}-\frac{x^4}{2}+\frac{5x^3}{3}-2x^2+4x+C$\\
+  2d\\
+  $\int (2-x)^3dx=$
+  
+
+   
+\end{document}

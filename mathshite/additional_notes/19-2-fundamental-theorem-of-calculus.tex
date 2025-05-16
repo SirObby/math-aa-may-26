@@ -1,0 +1,38 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Fundamental theorem of calculus}
+  HL p 459\\
+  Definite integral $\int_{a}^{b}f(x) dx= [F(x)]=F(b)-F(a)$\\
+  where $F'(x)=f(x)$ and $a\leq x\leq b$\\
+  Example. Calculte $\int_{0}^{3}(x-1)dx=[\frac{x^2}{2}-x+C]=$\\
+  $=\frac{3^2}{2}-3+C-(\frac{0^2}{2}-0+C)$\\
+  $\frac{9}{2}-3$\\
+  $\frac{9}{2}-\frac{6}{2}=\frac{3}{2}$\\
+  Paper 2: $\int_{0}^{3}(x-1)dx=1.5$\\
+  Example 2.\\
+  $\int_{0.1}^{1}(\frac{1}{t}+e^{3t}-(4t+5)^3)dt$\\
+  $=[ln(t)+\frac{e^{3t}}{3}-(\frac{4t+5^4}{16}+(C))]$\\ 
+  $ln(1)+\frac{e^3\cdot1}{3}-\frac{(4\cdot1+5)^4}{16}+C-(ln(0.1)+\frac{e^3\cdot0.1}{3}-\frac{(4\cdot 0.1+5)^4}{16}+C)$\\
+  $=0+\frac{e^3}{3}-\frac{9^4}{16}-\frac{e^0.3}{3}+\frac{9.1^4}{16}$\\
+  $=27.0788$\\
+  paper 2 use calculator.\\
+  Excercise 7B p 459 ex 1-4\\
+  1. $\int_{0}^{4}(5)dx=[5x]=5\cdot4-5\cdot0+c=20-5=15$\\
+  2. $\int_{0}^{10}(2x-5)dx=[x^2-5x]=10^2-5\cdot10-(0^2-5\cdot0)=50$\\
+  3. $\int_{-3}^{3}(3-|x|)dx=9$\\
+  4. $\int_{-3}^{4}(\begin{cases}
+    4, x\leq 0\\
+    4-x,x>0
+  \end{cases})dx$\\
+  p 495 ex 4.\\
+  a) $\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}(x-sec^2x)dx$\\
+  
+
+   
+\end{document}

@@ -1,0 +1,62 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Compound angle}
+  p 403\\
+  see formula booklet\\
+  $\sin (a+b)=\sin (a)\cdot\cos (b)\pm\cos(a)\cdot\sin(b)$\\
+  $\cos (a+b)=\cos (a)\cdot\cos(b)-\sin(a)\cdot\sin(b)$\\
+  $\cos (a-b)=\cos (a)\cdot\cos(b)+\sin(a)\cdot\sin(b)$\\
+  $\tan(a+b)) \frac{\tan(a)+\tan(b)}{1-\tan(a)\cdot\tan(b)}$\\
+  $\tan(a-b)) \frac{\tan(a)+\tan(b)}{1+\tan(a)\cdot\tan(b)}$\\
+  Example. If $\sin(a)=\frac{3}{5} and \cos(b)=\frac{-12}{13}$\\
+  and $0<a<\frac{\pi}{2},\pi<b<\frac{3\pi}{2}$\\
+  a) Find $\sin(a+b)$.\\
+  Lets solve $\sin b$ and $\cos a$.\\
+  $\sin(a)^2+\cos(a)^2=1$\\
+  $\cos(a)=\pm\sqrt{1-(\frac{3}{5}^2)}$ and $0<a<\frac{\pi}{2}$\\
+  $\cos(a) is positive in 1st quadrant$\\
+  $\cos(a)=+\sqrt{1-\frac{9}{25}}=\sqrt{\frac{25-9}{25}}=\frac{4}{5}$\\
+  and $\sin(b)^2+\cos(b)^2=1$\\
+  $\sin(b)=\pm\sqrt{1-\frac{-12}{13}^2}$ and $\pi<b<\frac{3\pi}{2}$\\
+  $\sin(b)$ is negative in 4. quadrant\\
+  $\sin(b)=-\sqrt{\frac{169-144}{169}}=-\frac{5}{13}$\\
+  $\sin(a+b)=\sin a\cdot\cos b+\cos a\cdot\sin b$\\
+  $\frac{3}{5}\cdot(\frac{-12}{13})+\frac{4}{5}\cdot(-\frac{5}{13})$\\
+  $\frac{-36-20}{5\cdot13}=\frac{-56}{65}$\\
+  Example 2. $Find \cos(15\degree)$.\\
+  memory triangles has $30\degree,45\degree,50\degree,0\degree,90\degree,180\degree$\\
+  $\cos(15)=\cos(45\degree-30\degree)$\\
+  $=\cos(45)\cdot\cos(30)+\sin(45)\cdot\sin(30)$\\
+  $\frac{1}{\sqrt{2}}\cdot(\frac{\sqrt{3}}{2})+\frac{1}{\sqrt{2}}\cdot(\frac{1}{2})$\\
+  $\frac{\sqrt{3}+1}{2\cdot\sqrt{2}}$\\
+  p 404 ex:4-6\\
+  \subsection{404}
+  Evaluate = calculate EXACT value (not approximation)\\
+  4. a. $\sin(75\degree)$\\
+  $\sin(75)=\sin(45+30)$\\
+  $\sin(45)\cdot\cos(30)+\cos(45)\cdot\sin(30)$\\
+  $\frac{1}{\sqrt{2}}\cdot\frac{\sqrt{3}}{2}+\frac{1}{\sqrt{2}}\cdot\frac{1}{2}$\\ 
+  $=\frac{\sqrt{3}}{\sqrt{2}\cdot2}+\frac{1}{\sqrt{2}\cdot2}$\\
+  $=\frac{\sqrt{2}+\sqrt{6}}{2\cdot2}=\frac{\sqrt{2}+\sqrt{6}}{4}$\\
+  b. $\tan(105\degree)$\\
+  $\tan(105)=\tan(45+60)$\\
+  $=\frac{\tan(45)+\tan(60)}{1-\tan(45)\cdot\tan(60)}$\\
+  $=\frac{\frac{1}{1}+\frac{\sqrt{3}}{1}}{1-\frac{1}{1}\cdot\frac{\sqrt{3}}{1}}$\\
+  $=\frac{1+\sqrt{3}}{\sqrt{3}}$\\
+  $\frac{1+3}{3}$\\
+  $\frac{4}{3}$\\
+  c. $\sin(33)\cos(3)-\cos(33)\sin(3)=?$\\
+  $=\sin(33-3)=\sin(30)=\frac{1}{2}$\\
+  see compound angle for sin or cos\\
+  4d. $\cos75\degree\cos15\degree+\sin75\degree\sin15\degree$\\
+  $\cos(75-15)=\cos60=\frac{1}{2}$\\
+  5a. A is obtuce and B is acute 
+
+
+\end{document}

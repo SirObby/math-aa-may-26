@@ -1,0 +1,39 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of May 2025}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\begin{document}
+  \maketitle
+   
+  \section{Inverse normal distribution continuing}
+  1) If you know mean=expected value $=\mu$ and variance $=\sigma$\\
+  then $P(X<a)=prob$\\
+  $a=invNorm(probability=area,\mu,\sigma)$\\
+  2) if $\mu=?$ or $\sigma=?$\\
+  then standardize $Z=\frac{a-\mu}{\sigma}=invNorm(probability,0,1)$\\
+  3) note that $P(X<a) or P(Z<a) must have < for inverse normal$\\
+  $P(X>a)=1-P(X<a)$\\
+  handout:\\
+  10. A forest has a large number of tall trees. The heights of the tres ar enormalyl distributed with a mean of 53 meters and a standard deviation of 8 metres. Trees are calssified as giant if they are more than 60 meters high.\\
+  a) i) $P(tree is giant)=P(X>60)$\\
+  $normlCdf(60,\infty,53,8)=0.191$\\
+  Ans: $0.191$\\
+  aii) given that.. means conditional.\\
+  $P(X>70 | tree is giant)=\frac{P(X>70 and giant)}{P(giant)}$\\
+  $=\frac{nromCdf(70,\infty,53,8)}{0.191}=0.088021$\\
+  b) $0.191^2=0.0364$\\
+  c) binomial distribution.\\
+  expected value:$0.191\cdot100=19.1$\\
+  ii) atleast 25.\\
+  $P(atleast 25 of 100 trees are giant)=binomCdf(100,0.190,25,100)=0.0869$\\
+  11) 
+  
+
+  
+   
+
+   
+\end{document}

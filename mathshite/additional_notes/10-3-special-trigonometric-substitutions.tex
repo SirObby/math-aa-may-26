@@ -1,0 +1,47 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Special trigonometric substitutions HL}
+  If the form $\frac{1}{\sqrt{a^2-x^2}}$ then use $x=a\cdot sin(u)$\\
+  If the form $\frac{1}{\sqrt{x^2-a^2}}$ then use $x=a\cdot sec(u)$\\
+  If the form $\frac{1}{\sqrt{a^2+x^2}}$ then use $x=a\cdot tan(u)$\\
+  Example:\\
+  a) $\int \frac{arcsin x}{\sqrt{1-x^2}}dx =?$\\
+  $x=1\cdot sin(u)$ || arcsin()\\
+  $arcsin(x)=u || \frac{d}{d}()$\\
+  $\frac{1}{\sqrt{1-x^2}}=du$\\
+  $\int u du = $\\
+  $= \frac{u^2}{2}+C=\frac{arcsin^2x}{2}+C$\\
+  p 503 ex 7i:1-6\\
+  ex 1.\\
+  $\int_{2}^{5}\frac{x}{\sqrt{x-1}}dx=?$\\
+  substitute $t=x-1$\\
+  $x=t+1$ and $dx=dt$\\
+  if $x=5$ then $t=5-1=4$\\
+  if $x=2$ then $t=2-1=1$\\
+  $\int_{1}^{4}\frac{t+1}{\sqrt{t}}dt=\int_{1}^{4}(\frac{t}{t^{1/2}}+\frac{1}{t^{1/2}})dt$\\
+  $=\int_{1}^{4}(t^{1/2}+t^{-1/2})dt$\\
+  $=[ \frac{t^{3/2}}{3/2}+\frac{t^{1/2}}{1/2}]$\\
+  $=\frac{2}{3}\cdot t^1\cdot \sqrt{t}+\frac{2}{1}\cdot\sqrt{t}$\\
+  $=\frac{2}{3}\cdot4\cdot\sqrt{4}+2\cdot\sqrt{4}-(\frac{2}{3}\cdot1\sqrt{1}+2\cdot\sqrt{1})$\\
+  $\frac{2\cdot4\cdot2}{3}+2\cdot2-\frac{2}{3}-2$\\
+  $\frac{16}{3}-\frac{2}{3}+4-2$\\
+  $\frac{14}{3}+\frac{6}{3}=\frac{20}{3}$\\
+  ex 2. $\int_{3}^{4}(\frac{x}{2-x})^2dx$\\
+  $t=2-x$ and $x=2-t$\\
+  $dx=dt$\\
+  $t=2-4=-2$\\
+  $t=2-3=-1$
+  $\int_{-1}^{-2}(\frac{2-t}{t})^2dt=\int_{-1}^{-2}(\frac{2}{t}-1)^2dt$\\
+  $=\int_{-1}^{-2}\frac{4}{t^2}2\cdot(\frac{2}{t}\cdot1+1^2)dt$\\
+  $=\int_{-1}^{-2}(4\cdot t^{-2}-4\cdot(\frac{1}{t})+1)dt$\\
+  $[ 4\cdot (\frac{t^{-1}}{-1})-4\cdot ln|t|+t]$\\
+  $=-\frac{4}{-2}-4\cdotln|-2|-2-(\frac{-4}{-1}-4\cdot ln|-1|-1)$\\
+
+   
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Derivative of Cosine}
+  HL p 424\\
+  $D cos(x)=-\sin(x)$\\
+  $D sin(x)=cos(x)$\\
+  chain rule $D g(f(x)) = g'(f(x))\cdot f'(x)$\\
+  product rule $D f(x)\cdot g(x)= f'(x)\cdot g(x) + f(x)\cdot g'(x)$\\
+  quotient rule: $D (\frac{f(x))}{g(x)}=\frac{g'(x)\cdot g(x)-f(x)\cdot g'(x)}{g(x)^2}$\\
+  Example.\\
+  a) $D cos(2x+6)$\\
+  $-sin(2x+6)\cdot D(2x+6)=-2\sin(2x+6)$\\
+  b) $D cos^2(x)=D (cos x)^2=2\cdot\cos x^1\cdot D(cos x)=2\cdot\cos(x)\cdot(-\sin x)=-2\cdot\sin(x)\cdot\cos(x)$\\
+  $=-sin(2x$\\
+  c) $D (\frac{\sin x}{\cos x})=\frac{D sin x\cdot cos x-sin x \cdot D cos x}{cos x^2}$\\
+  $=\frac{\cos(x)\cdot \cos x-\sin x\cdot-\sin(x)}{\cos(x)^2}$\\
+  $=\frac{\cos^2(x)+\sin(x)^2}{\cos^2(x)}$\\
+  1) $\frac{cos^2(x)}{cos^2(x)}+\frac{\sin^2(x)}{\cos^2(x)}=1+\tan^2(x)$\\
+  or 2$\frac{1}{\cos(x)^2}$ or 3) $sec^2(x)$\\
+  HL $D tan x=1+tan^2x=\frac{1}{\cos^2(x)}$ see formula booklet\\
+  HL extra:\\
+  $D cosec x=-cosec x\cdot cot x$\\
+  $D sec x= sec x\cdot tan x$\\ 
+  $D cot x=-cosec^2 x$ see formula booklet\\
+  hl p 425 ex 1-2 + p 426:1-3\\
+  differentiate = derivate = find slope of tangent\\
+  1. a) $y=cot x$\\
+  differentiation is $y'=?=-cosec^2(x)$\\
+  b) $y=cosec x$\\
+  $y'=-cosec x\cdot cot x$\\
+  2. a) $D \sin(2x)$\\
+  $=\cos(2x)\cdot 2=2\cos(2x)$\\
+  b) $D cos(2x+1)=-\sin(2x+1)\cdot2=-2\sin(2x+1)$\\
+  c) $y=\cos(8-3x) so y'=-sin(8-3x)\cdot(-3)=3\cdot(8-3x)$\\
+  d) $y=cot(\frac{8-2x}{13})=-cosec^2(\frac{7-2x}{13})\cdot D(\frac{7-2x}{13})=-cosec^2(\frac{7-2x}{13})\cdot\frac{-2}{13}=\frac{2}{13}\cdot cosec^2(\frac{7-2x}{13})$\\
+  1. a) $y=sin x(2x+1)$\\
+  $y'=\cos(x)\cdot(2x+1)+\sin(x)\cdot2$\\
+  b) $y=cos 2x(x+x^2)$\\
+  $y'=-\sin(2x)\cdot D(2x)=-2\sin(2x$)\\
+  c) 
+  e) $\frac{\tan (x)}{\sqrt{2-x}}$ quotient rule\\
+  $y'=\frac{sec ^2x\cdot\sqrt{2-x}-tan x\cdot(2-x)^{-\frac{1}{2}}}{(\sqrt{2-x})^2}$\\
+  $=\frac{sec^2(x)\cdot\sqrt{2-x}}{(\sqrt{2-x})^2}-\frac{1/2\cdot tan x}{(2-x)\cdot(\sqrt{2-x})}$\\
+
+  
+
+   
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{10th of September 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+  
+  \subsection{hw}
+  $\frac{dy}{dx}=y'(x)=D(\frac{f}{g})=\frac{f'\cdot g-f\cdot g'}{g^2}$\\
+  $D(\frac{x^3+x^2+x+1}{x})$\\
+  $=\frac{(3x^2+2x+1+0)\cdot x-(x^3+x^2+x+1)\cdot 1}{x^2}$\\
+  $=\frac{3x^3+2x^2+x-x^3-x^2-x-1}{x^2}$\\
+  $=\frac{2x^3+x^2-1}{x^2}$ is slope of tangent\\
+  that is parallel to $y=x$\\
+  means same gradient = 1\\
+  equation: $\frac{2x^3+x^2-1}{x^2}=1$\\
+  $2x^3+x^2-1=x^2$\\
+  $2x^3=1+x^2-x^2$\\
+  $2x^3=1$\\
+  $(x^3)=\frac{1}{2}$\\
+  $x=\sqrt[3]{\frac{1}{2}}$\\
+  $x=\frac{1}{\sqrt[3]{2}}$\\
+
+  \section{Second / Higher deriverative}
+  hl p 259
+  the first derivative of f(x) is f'(x) = $\frac{dy}{dx}$\\
+  the second derivative is $f''(x)=\frac{d^2y}{dx^2}$\\
+  the third derivative is $f'''(x)=\frac{d^3y}{dx^3}$\\
+  n th derivative is $f^{(n)}(x)=\frac{d^ny}{dx^n}$\\
+  Example a) $f(x)=x^5+3x^2$\\
+  $f'(x)=5x^4+4\cdot2x=5x^4+6x$\\
+  $f''(x)=D(5x^4+6x)=20x^3+6$\\
+  $f'''(x)=D(20x^3+6)=60x^2+0$\\
+  $f^4(x)=D(60x^2)=120x$\\
+  $f^5(x)=D(120x)=120$\\
+  $f^6(x)=0$\\
+  $f^7(x)=0$\\
+  $f^n(x)=0, for n\geq6$\\
+  
+  ex hl p 261\\
+  \subsection{p 261 4L}
+  1) If $f(x)=1-4x-\frac{1}{x}$\\
+  $f'(x)=\frac{1}{x^2}-4$\\
+  $f''(x)=\frac{2}{x^3}$\\
+  2) $f(x)=3x^5-2x^2+1$\\
+  $f'(x)=15\cdot4x^3-4x$\\
+  $f''(x)=60x^2-4$\\
+  $f'''(x)=180\cdot2x$\\
+  $f^4(x)=180\cdot2x     so f^4(1)=360\cdot1=360$\\
+  derivate first, then substitute
+  3) $y=(1-ax)^3$ find a such that $\frac{d^3y}{dx^3}=162$\\
+  $f'(x)=3\cdot(1-a\cdot x)\cdot (0-a)=3-a(1-ax)^2$
+  $f''(x)=D(3-a(1-ax)^2)=-3a\cdot 2(1-ax)^1\cdot(0-a)$\\
+  $=6a^2\cdot(1-ax)$\\
+  $f'''(x)=D(6a^2\cdot(1-ax))=6a^2\cdot(0-a)=-6a^3$\\
+  $-6a^3=162$\\
+  $a^3=\frac{162}{-6}$\\
+  $a=\sqrt[3]{\frac{162}{-6}}=-3$\\
+  4)  
+  
+   
+\end{document}

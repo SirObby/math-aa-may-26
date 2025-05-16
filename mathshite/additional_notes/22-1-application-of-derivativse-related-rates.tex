@@ -1,0 +1,47 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Applicatioon of derivatives, related rates}
+  hl p 429\\
+  Example, Iryna has \$5000 to invest in an account that pays 5.2\% p.a. (per annum=per year)\\
+  How long does it take for the value to reach 20 000\$\\
+  $t=time=?$\\
+  interest 5.2\%, growthfactor $1+0.052$\\
+  final amount=$original\cdot factor^{time}$\\
+  $20 000=5000\cdot 1.052^t$\\
+  $400=1.052^t$\\
+  Ans: 28th year.\\
+  b) What is the rate of change of investment after 10 years?\\
+  rate of change=$f'(x)$\\
+  amount $f(x)=5000\cdot1.052^x$\\
+  $f'(10)=5000\cdot 1.052^{10}\cdot ln(1.052)$\\
+  $=421$\\
+  Ans: \$421/year.\\
+  hl p 431 example\\
+  hl p 432 ex 1\\
+  $tan(\theta)=\frac{y}{100}$\\
+  $y=100\cdot tan(\theta)$\\
+  $\frac{dy}{dt}=100\cdot sec^2(\theta)\cdot(\frac{d\theta}{dt})$ and from the text\\ 
+  rotation $\frac{d\theta}{dt}=5per min=\frac{6}{60 sec}=0.1 times/sec$\\
+  at the moment $\theta=0$ so substitution\\
+  $\frac{dy}{dt}=100\cdot sec^2(0)\cdot(0.1)$\\
+  $10\cdot(sec(0))^2=10$\\
+  Ans: 10m/sec\\
+  b) 50 meters to the closest lighthouse\\
+  $y=50$\\
+  $tan(\theta)=\frac{50}{100}$\\
+  $\theta=tan^{-1}(50/100)=0.463$ radians\\
+  $100\cdot (sec(0.4636))^2\cdot0.1=12.5$
+  and $12.5 m/sec$\\
+  c) $at parallel \theta=90\degree=\frac{\pi}{2}=1.57$\\
+  so $\frac{dy}{dt}=100\cdot sec^2(\theta)\cdot(\frac{d\theta}{dt})$\\
+  $=100\cdot(sec(\frac{\theta}{2}))^2\cdot0.1=undef$\\
+  velocity approaches $\infty$\\
+  
+     
+\end{document}

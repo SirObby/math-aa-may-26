@@ -1,0 +1,72 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of April 2025}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\begin{document}
+  \maketitle
+   
+  \section{Binomial distribution}
+  hl 712\\ 
+  1) Each trial has 2 possille outcomes like success or failure\\
+  2) there are a fixed number of trials n\\
+  (n times repeated the same event)\\
+  3) probability of success is p (constant)\\
+  P of failure=q=$1-p$ (constant)\\
+  P(x=r)=$nCr(n,r)\cdot p^r\cdot q^{n-r}$\\
+  X~Bin(n,p)\\
+  Calculator notation:\\
+  $binomPdf(10,0.5,3)=0.117188$\\
+  menu -> 5:probability -> 5: distribution ->A:binomPdf\\
+  goves 10 trials, probability to get heads=0.5, and 3 times head + 7 times tail has probability 0.117\\
+  Example\\
+  Probability of a rainy day is 0.3. Find the probability that\\
+  a) there is exactly 2 rainy days in a week.\\
+  binomial event p=0.3 and q=0.7\\
+  in a week=7=number of trials=n\\
+  P(exactly 2 rainy days in a week)=$nCr(7,2)\cdot0.3^2\cdot(0.7)^{7-2}=0.317$\\
+  P(exactly 2 rainy days in a week)=binomPdf(7,0.3,2=$0.317652$\\
+  b) not more than 2.\\
+  =$P(0 or 1 or 2 rainy days)$\\
+  $binomCdf(7,0.3,2)=0.64707$\\
+  or paper 1 style:\\
+  =$P(X=0)+P(X=1)+P(X=2)$\\
+  $nCr(7.0)\cdot0.3^0\cdot 0.7^7+nCr(7,1)\cdot(0.3)^1\cdot0.7^6+nCr(7,2)\cdot 0.3^2\cdot 0.7^5=0.64707$\\
+  Investigation 7, page 713.\\
+  1. Trials = 5.\\
+  2. 6 or not 6.\\
+  3)
+  Prob of succ: $\frac{1}{6}$\\
+  Prob of !succ: =$\frac{5}{6}$\\
+  4. Random variable= how many times we got 6, Ans: 0.,1,2,3,4,5.\\
+  5. One possible outcome is SFSSF, calculate prob:\\
+  $P(S and F and S and S and F)=\frac{1}{6}\cdot\frac{5}{6}\cdot\frac{1}{6}\cdot\frac{1}{6}\cdot\frac{5}{6}=\frac{25}{6^5}$\\
+  HL page 717, ex: 1,2a,3a,b,4,5b\\
+  1. a) $binomPdf(8,0.25,3)=0.2076$\\
+  b) $binomCdf(8,0.25,9)=1$, r is more than 8 trials.\\
+  c) $P(X=0 or 1)$\\
+  $binomCdf(8,0.25,1)=0.367081$\\
+  2. a) $E(X)=np=8\cdot0.25=2$\\
+  3. a) $P(X=5)=nCr(5,5)\cdot 0.5^5\cdot 0.5^{5-5}=0,03125=\frac{1}{32}$\\
+  b)\\
+  \begin{table}
+    \caption{}\label{tab:}
+    \begin{center}
+      \begin{tabular}[c]{l|l}
+        \hline
+        \multicolumn{1}{c|}{\textbf{}} & 
+        \multicolumn{1}{c}{\textbf{}} \\
+        \hline
+        a & b \\
+        c & d \\
+        
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+  
+
+   
+\end{document}

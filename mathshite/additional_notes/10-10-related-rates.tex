@@ -1,0 +1,51 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{10th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Related rates}
+  Related rates p 291 HL.\\
+  * Make a sketch or diagram of the problem\\
+  * label the variables with fixed quantities\\
+  * identify an equation\\
+  * differentiate the equation with respect to time $\frac{d}{dt}()$\\
+  * find the unknown\\
+  Example: Ladders of 3m is leaning against the wall. The bottom of the ladder starts to slip, but how fast?
+  If bottom of the ladder comes down by 0.2 m/s when base is about 1.5 meters.\\
+  right triangle $x^2+y^2=3^2 || \frac{d}{dt}()$\\
+  $2x\cdot\frac{dx}{dt}+2y\cdot\frac{dy}{dt}=0$\\
+  $\frac{dx}{dt}=\frac{\frac{dy}{dt}}{x}$\\
+  substitute $\frac{dy}{dt}=-0.2$, x$=1.5$, y=?\\
+  $x^2+y^2=3^2 gives y^2=9-x^2, y=\sqrt{9-(1.5)^2}$\\
+  and now $\frac{dx}{dt}=\frac{-y\cdot\frac{dy}{dt}}{x}=\frac{-2.59\cdot-0.2}{1.5}=0.346$\\
+  Ans rate of change of x, base is 0.356 m/s\\
+  ex. 1-10 p 294\\
+  1. a) rate of change= $\frac{d}{dt}()=?$\\
+  $A=\pi r^2 || \frac{d}{dt}()$\\
+  $\frac{dA}{dt}=\pi2r^1\cdot\frac{dr}{dt}$\\
+  b) $A=2\pi r^2+2\pi h$\\
+  $\frac{dA}{dt}=2\pi\cdot\frac{dr}{dt}+2\pi\cdot(\frac{dh}{dt})$\\
+  c) $V=\frac{1}{3}\cdot\pi r^2\cdot h || \frac{d}{dt}()$\\
+  note product rule of differentiation!\\
+  $\frac{dV}{dt}=\frac{pi}{3}\cdot(\cdot(2rh\cdot(\frac{dr}{dt})+r^2\cdot\frac{dh}{dt})$\\
+  d) $\frac{dV}{dt}=\frac{4}{3}\cdot\pi\cdot 3r^2\cdot\frac{dr}{dt}$\\
+  $\frac{dV}{dt}=4\pi r^2\cdot\frac{dr}{dt}$\\
+  2. $x^2=h^2+(\sqrt{l^2+w^2})=h^2+l^2+w^2 || \frac{d}{dt}()$\\
+  $2x\cdot(\frac{dx}{dt})=2h\cdot\frac{dh}{dt}+2l\cdot(\frac{dl}{dt})+2w\cdot\frac{dw}{dt}$\\
+  rate of change of diagonal= $\frac{dx}{dt}=\frac{2h\cdot\frac{dh}{dt}+2l\cdot(\frac{dl}{dt})+2w\cdot\frac{dw}{dt}}{2x}=\frac{h\cdot\frac{dh}{dt}+l\cdot(\frac{dl}{dt})+w\cdot\frac{dw}{dt}}{x}$\\
+  ex 3. c) from ex2. $\frac{dx}{dt}=\frac{l\cdot\frac{dl}{dt}+2\cdot\frac{dw}{dt}}{x}$\\
+  $l=24,w=7$ length increases $\frac{d}{dt}(l)=+3$\\
+  width decreases $\frac{dw}{dt}=-3$\\
+  $\frac{dx}{dt}=\frac{24\cdot3+7\cdot(-3)}{25}=2.04$\\
+  Ans increases by 2.04 m/s\\
+  a) Area of rectangle\\
+  $A=l\cdot w || \frac{d}{dt}()$\\
+  $\frac{dA}{dt}=l\cdot\frac{dw}{dt}+2\cdot\frac{dl}{dt}$\\
+  $\frac{dA}{dt}=24\cdot3+7\cdot3=-51$\\
+  
+
+   
+\end{document}

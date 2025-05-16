@@ -1,0 +1,49 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Substitution and limit of definite integral}
+  revision: $D (f g(x))) = f'(g(x))\cdot g'(x)$\\
+  and $\int(f(g(x))\cdot g'(x)) = F(g(x)) + C$\\
+  Note: the inner function's derivate goes off!\\
+  Example a) $\int_{0}^{2}((4x^3+2x)^7\cdot (6x^2+1))dx$\\
+  substitute $u=(4x^3+3x)$, du=$12x^2+2=2\cdot(6x^2+1)$\\
+  and x=0, y=$4\cdot 0^3+2\cdot0=0$\\
+  $x=2$ $u=4\cdot2^3+2\cdot2=4\cdot8=4=36$\\
+  $\frac{1}{2}\int_{0}^{2}(2\cdot(6x^2+1)\cdot(4x^3+2x)^7)dx$\\
+  $\frac{1}{2}\int_{0}^{36}u^7du$\\
+  $=\frac{1}{2}[\frac{u^8}{8}]=\frac{1}{16}(36^8-0^8)=\frac{36^8}{16}$\\
+  b) $\int3x^2\sqrt{x^3+3}dx$\\
+  =$\int((x^3+3)^{1/2}\cdot 3x^2)dx$\\
+  inner part of brackets=inner function=$(x^3+3)$\\
+  $D(x^3+3)=3x^2=du$\\
+  $\int u^{1/2} du$\\
+  $=\frac{u^3/2}{3/2}+C=\frac{2}{3}\cdot u^1u^1/2+c$\\
+  c) $\int((3-4x)\cdot e^{(1+3x-2x)})dx$\\
+  inner function = $(1+3x-2x^2)=u$\\
+  du $D(1+3x-2x^2)=3-2\cdot2x=3-4x$\\ 
+  $=\int(e^u) du=e^u+c=e^{1+3x-2x^2}+C$\\
+  hl p 499 ex 7H\\
+  1. $\int6x\sqrt{3x^2+4}dx$\\
+  $(3x^2+4)^{1/2}\cdot 6x$\\
+  innter function u=$3x^2+4$\\
+  du=$3\cdot2x=6x$\\
+  $\int(u^{1/2}du)=\frac{u^{1/2+1}}{3/2}+c=\frac{2}{3}\cdut u\sqrt{u}+c$\\
+  $=\frac{2}{3}(3x^2+4)\sqrt{3x^2+4}+C$\\
+  2. $\int 3x^2\cdot cos x^3dx$\\
+  inner function $u=x^3$\\
+  du$=D(x^3)=3x^2$\\
+  $\int cos(u)du=sin(u)+C=sin(x^3)+C$\\
+  3. $\int (1-2x)e^{2+x-x^2}$\\
+  $inner function u=2+x-x^2$\\
+  $du=D(2+x-x^2)=1-2x$\\
+  $\int(e^u)du=e^{2+x-x^2}+C$\\
+
+  
+
+  
+\end{document}

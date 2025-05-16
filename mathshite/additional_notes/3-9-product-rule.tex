@@ -1,0 +1,41 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{3rd of September 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{product rule of differentiation}
+  HL p 255\\
+  $D F(x)\cdot G(x)= F'(x)\cdot G(x) + F(x)\cdot G'(x)$\\
+  formula booklet: $y=u\cdot v$ $\frac{dy}{dx}=u\cdot \frac{dv}{dx}+v\cdot\frac{du}{dx}$\\
+  Example. a) $D (2x+5)\cdot(x^3-y)^{10}$\\
+  Lets subst. $F(x)=2x+5, F'(x)=2$\\
+  $G(x)=(x^3-7)^{10}, G'(x)=10\cdot (x^3-7)^9\cdot (3x^2)$\\
+  use product \textbf{rule} $D(2x+5)\cdot(x^3-7)^{10}$\\
+  $=2\cdot(x^3-7)^{10}+(2x+5)\cdot10\cdot(x^3-7)^9\cdot3x^2$\\
+  take a common factor and simplify\\ 
+  $=[x^3-7]^9\cdot(2\cdot (x^3-7)+(2x+5)\cdot10\cdot3x^2)$\\
+  $=(x^3-7)^9\cdot(2x^3-14+60x^3+150x^2)$\\
+  $(x^3-7)^9\cdot(62x^3+150x^2-14)$\\
+  b) $D(4x\cdot\sqrt{8x+3})$\\
+  $f(x)=4x, f'(x)=4$\\
+  $g(x)=\sqrt{8x+3}=(8x+3)^{1/2}, g'(x)=\frac{1}{2}(8x+3)^{-1/2}\cdot8$\\
+  product rule\\
+  $D f(x)\cdot g(x)=f'(x)\cdot g(x)+f(x)\cdot g'(x)$\\
+  $D (4x\cdot\sqrt{8x+3})=4\cdot\sqrt{8x+3}+4x\cdot(\frac{1}{2}(8x+3)^{-1/2}\cdot(8+0))$\\
+  $=4\cdot\sqrt{8x+3}+\frac{16x}{\sqrt{8x+3}}$\\
+  \section{excercises hl p 256,1-8}
+  1. $f(x)=(2x-3), f'(x)=2$\\
+  $g(x)=(x+3)^3, g'(x)=3\cdot(x+3)^2$\\
+  $D((2x-3)(x+3)^3) =2\cdot(x+3)^3+(2x-3)\cdot(3\cdot(x+3)^2)$\\
+  $2\cdot(x^3+9)+(2x-3)\cdot(2x-3)\cdot(3x^2+3\cdot9))$\\
+  $2x^3+18+(2x-3)\cdot(3x^2+27)$\\
+  $2x^3+18+2x\cdot3x^2+2x\cdot27+(-3)\cdot3x^2+(-3)\cdot(27)$\\
+  $2x^3+18+6x^3+54x-9x-81$\\
+  $8x^3+45x-63$\\
+  
+
+   
+\end{document}

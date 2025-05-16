@@ -1,0 +1,50 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \subsection{hw}
+  ex 5 p294 hl\\
+  cube has side =x\\
+  $\frac{d}{dt}(surface area)=?$\\
+  surface area of cube=$x^2\cdot6$\\
+  $\frac{d}{dt}(volume)=+1.5$\\
+  volume=$x^3=27 ||\sqrt[3]{}$\\
+  $x=\sqrt[3]{27}=3$\\
+  $\frac{d}{dt}(volume)=D x^3=3\cdot x^2\cdot(\frac{d}{dt}(x))$
+  subst $1.5=3\cdot(3)^2(\frac{d}{dt}(x))$\\
+  $\frac{d}{dt}(x)=\frac{1.5}{3\cdot3^2}=0.055556$\\
+  Now $\frac{d}{dt}(area)=D 6x^2=6\cdot2x^1\cdot(\frac{d}{dt}(x))$\\
+  subst $6\cdot2\cdot3\cdot0.55556=2.0002$\\
+  Ans: surface rea increases by $2 m^2/s$.\\
+  \section{river crossing}
+  $|AC|=\sqrt{x^2+1^2}$\\
+  $time=\frac{distance}{velocity}$\\
+  Time taken to swim from A to C$=\frac{x^2+1}{3}$\\
+  Time taken to run from C to D $=\frac{2-x}{8}$\\
+  total time $T=\frac{\sqrt{x^2+1}}{3}+\frac{2-x}{8}$
+  $\frac{d}{dx}(T)=D( (x^2+1)^{\frac{1}{2}}\cdot(\frac{1}{3})+\frac{2}{8}-\frac{1}{8}\cdot x )$\\
+  $=\frac{1}{2}\cdot(x^2+1)^{-\frac{1}{2}}\cdot(2\cdot x+0)\cdot(\frac{1}{3})+0-\frac{1}{8}\cdot1$\\
+  $=\frac{1\cdot x}{3\cdot\sqrt{x^2+1}}- \frac{1}{8}$\\
+  to find minimum total time\\
+  $\frac{d}{dx}(T)=0$\\
+  $\frac{1\cdot x}{3\cdot\sqrt{x^2+1}}-\frac{1}{8}=0$\\
+  $\frac{1\cdot x}{3\cdot\sqrt{2x+1}}=\frac{1}{8} cross multiply$\\
+  $8x=3\cdot\sqrt{x^2+1}$\\
+  $64x^2=9(x^2+1)$\\
+  $64x^2=9x^2+9$\\
+  $55x^2=9\\$
+  $x=\pm\sqrt{\frac{9}{55}}$\\
+  second derivative test could tell if it is a minimum.\\
+  $D (\frac{1\cdot x}{3\cdot\sqrt{x^2+1}}-\frac{1}{8})=\frac{1\cdot1\cdot3\cdot\sqrt{x^2+1}-1\cdot x\cdot3\cdot(1/2)(x^2+1)^{-\frac{1}{2}}\cdot(2x+0)}{(3\cdot\sqrt{x^2+1})^2}$\\
+  subst $x=0.40452$\\
+  $T''(0.40452)>0 so T''>0$ so T has minimum.\\
+  Ans to minimum total time first swimming to point $0.0405$ km and then running the rest $2-0.405=1.6$ km\\
+  
+  
+
+   
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of September 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Revision}
+  1) Function is relation that connects every x from domain into exactly one y from range.\\
+  (vertical line intersects only once with function, If vertical line has more intersection points, then relation is not a function.)\\
+  2) Composite function $f\circ g(x)=f(g(x))$\\
+  inside brackets there is inner functio and outside the brackets there is outer function.\\
+  3) inverse function\\
+  $y=f(x)$ solve for x\\
+  $x=f^{-1}(y)$ interchange x and y\\
+  $Ans: y=f^{-1}(x)$\\
+  definition of inverse: $f(f^{-1}(x))=x$\\
+  4) limit $\lim_{x\to a}(f(x))=b$\\
+  exists if b is a number, not 2 numbers, not $\infty$\\
+  limit is found from table, graph or algebric way\\
+  $\lim_{x\to1}(\frac{2x-2}{x^2-1})=to to substitute\frac{}{1^2-1}=\frac{}{0}$= try to cancel factors\\
+  $=\lim_{x\to1}(\frac{x\cdot(x-1)}{(x-1)\cdot(x+1)})=\frac{2}{1+1}$=1\\
+  HL\\
+  continuous function has $\lim_{x\to a^-}(f(x))=\lim_{x\to a^+}(f(x))=f(a)$\\
+  5) differential calculus\\
+  deriverative gives slope=gradient of tangent\\
+  $=\frac{d}{dx}(y)=y'(x)=f'(x)$\\
+  HL first principle method:\\
+  $\lim_{h\to0}(\frac{f(a+h)-f(a)}{h})=f'(a)$\\
+  SL rules:\\
+  power rule: $D x^n=n\cdot x^{n-1}$\\
+  $D \frac{3}{\sqrt{x}}=D 3\cdot x^{-\frac{1}{2}}$\\
+  $3\cdot(\frac{-1}{2})\cdot x^{\frac{-3}{2}}=\frac{-3}{2\cdot\sqrt{x^3}}$\\
+  Constant: $D 3 =0$\\
+  but factor $D 3\cdot x=3$\\
+  $D 3\cdot f(x)=3\cdot f'(x)$\\
+  product rule: $D (f\cdot g)=f'(x)\cdot g(x)+f(x)\cdot g'(x)$\\
+  quotiont rule: $D (\frac{f(x)}{g(x)})=\frac{f'(x)\cdot g(x)-f(x)\cdot g'(x)}{g(x)^2}$\\
+  chain rule for brackets!\\
+  $D f(g(x))=f'(g(x))\cdot g'(x)$\\
+  tangent line slope $m=f'(x_0)$\\
+  $y-y_0=m\cdot(x-x_0)$\\
+  normal is perpendicular to tangent line\\
+  normal has slope m=$\frac{-1}{f'(x_0)}=\frac{-1}{slope of tangent}$\\
+  function increases $f'(x)>0$\\
+  decreases $f'(x)<0$\\
+  at minimum $f'(x)=0$ and $f''(X)>0$\\
+  at maximum $f'(x)=0$ and $f''(x)<0$\\
+  at point where $f''(x)=0$ there is inflection\\
+
+
+   
+\end{document}

@@ -1,0 +1,33 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Derivative of sine}
+  hl p 423-425\\
+  derivative means slope of tangent.\\
+  $D sin x = cos x$\\
+  Example\\
+  a) $D 3+4\cdot\sin(x)-\sin(2x+6)$\\
+  $0 + 4\cdot \cos(x) - \cos(2x+6)\cdot(2+0)$ (chain rule)\\
+  $=4\cos(x)-2\cos(2x+6)$
+  b) $D sin^2x = 2\cdot\sin(x)^1\cdot\cos(x)=$\\
+  $2\sin(x)\cos x$\\
+  that is $=sin(2x)$\\
+  hl p 425:2a + p426 ex1a,d,2a,c\\
+  2a $y=sin 2x$\\
+  differentiate $y'=D sin(2x)=\cos(2x)\cdot2$\\
+  $=\cos(2x( \cdot2)=2\cos(2x)$\\
+  hl p 426\\
+  1a) $y=sin x(2x+1)$\\
+  $y'=\cos(x)\cdot(2x+1)+sin x\cdot(2+0)$\\
+  $=\cos(x)(2x+1)+2\cdot\sin(x)$\\
+  1d) $y=\frac{2x+3}{\sin(2x)}$\\
+  quotient rule $D=\frac{f}{g}=\frac{f'g-fg'}{g^2}$\\
+  $y'=\displaystyle\frac{2+0\cdot\sin(2x)-2x+3\cdot2\cos(2x)}{\sin(2x)^2}$\\
+
+   
+\end{document}

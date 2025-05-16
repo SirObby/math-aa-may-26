@@ -1,0 +1,55 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Fitting data}
+  HL p 415\\
+  $f(x)=a\cdot\sin(b\cdot x+c)+d$\\
+  or $g(x)=a\cdot\cos(b\cdot x+c)+d$\\
+  $a=amplitude=\frac{max-min}{2}$\\
+  $d=\frac{max+min}{2}$ shift up/down.\\
+  $c>0$ shift left\\
+  $c<0$ shift right\\
+  b=$\frac{2\pi}{period}$\\
+  $c$ is solved by subsitution after a,b,d,x and y.\\
+  Example. copy sl p 530 investigation\\
+  $\frac{30min}{12}=2.5min$ per sector\\
+  Ans; $f(t)=62.4\sin(0.204x-1.49)+63.8$\\
+
+  \begin{table}[]
+  \begin{tabular}{lllllllllllll}
+  Position        & p0 & p1  & p2    & p3  & p4     & p5   & p6  & p7   & p8     & p9   & p10   & p11  \\
+  Time (minutes)  & 0  & 2.5 & 5     & 7.5 & 10     & 12.5 & 15  & 17.5 & 20     & 22.5 & 25    & 27.5 \\
+  Height (meters) & 2  & 12  & 35.75 & 62  & 103.25 & 118  & 122 & 118  & 103.25 & 62   & 35.75 & 12  
+  \end{tabular}
+  \end{table}
+  OR 2 method.
+  height min=2 max=122\\
+  $a=\frac{122-2}{2}=60$\\
+  $d=\frac{122+2}{2}=62$\\
+  $b=\frac{2\pi}{period}=\frac{2\pi}{30}=\frac{\pi}{15}=0.2094$\\
+  Lets substitute point (5,35.75)\\
+  into $y=a\cdot\sin(b\cdot x+c)+d=$ use nsolve\\
+  HL p 417 ex 6O\\
+  \subsection{ex 6O}
+  1. a. $f(x)=5\cdot\sin(3(x+\frac{\pi}{12}))+1$\\
+  amplitude a=5\\
+  period =p=$\frac{2\pi}{3}$\\
+  phase shift=c=$\frac{3\pi}{12}=\frac{\pi}{4}$ left\\
+  max=$5\cdot1+1=6$\\
+  min$5\cdot-1+1=-4$\\
+  b. $g(x)=-2\cos(3x+\frac{5\pi}{2})-2$\\
+  amplitude=$-2$\\
+  period $p=\frac{2\pi}{3}$\\
+  phase shift=$\frac{5\pi}{2}$ left\\
+  min=$-2\cdot1-2=-4$\\
+  max=$-2\cdot-1-2=0$\\
+  2.
+
+
+   
+\end{document}

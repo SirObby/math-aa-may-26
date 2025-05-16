@@ -1,0 +1,78 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Revision.}
+  $f(x)=sin(x)$ periodic range [-1,1], domain $\mathbb{R}$\\
+  sin passes 0,0\\
+  degrees /radians GDC\\
+  unitcircle sin=y-coordinate\\
+  cos=x-coordinate\\
+  memory triangles\\
+  split square $45=\frac{pi}{4}$ 1,1$,\sqrt{2}$\\
+  split equilateral triangle $30=\frac{pi}{6}$\\
+  and 60 $=\frac{\pi}{3}$ has sides $1,2,\sqrt{3}$\\
+  $g (x)=cos(x)$ periodic, domain $\in\mathbb{R}$, range=[-1,1]\\
+  cos passes 1,0\\
+  D $sin(x)=cos(x)$\\
+  D $cos(x)=-sin(x)$\\
+  chain rule $D sin(f(x))=cos(f(x))\cdot f'(x)$\\
+  AHL $D arcsin (x)=\frac{1}{\sqrt{1-x^2}}$\\
+  $D arccos(x)=\frac{-1}{\sqrt{1-x^2}}$\\
+  $D arctan(x)=\frac{1}{1+x^2}$\\
+  $D sec(x)=sec(x)\cdot tan(x)$\\
+  $D cosec(x)=-cosec(x)\cdot cot(x)$\\
+  $D cot(x)=-cosec^2(x)$\\
+  modelling $f(x)=a\cdot sin(b\cdot x+c)+d$\\
+  $a=amplitude=\frac{max-min}{2}$\\
+  $b=\frac{2\pi}{period}$\\
+  $c=moves left if c>0, and rigt if c<0$\\
+  and $d=moves up d>0 and down d<0$\\
+  or calculate fit curve to table of values
+  \subsection{exponential and logarithmic functions}
+  exponential and logarithmic functions\\
+  $f(x)=a^x$ passes (0,1)\\
+  if $a>1$ function increases\\
+  if $a<1$ function decreases\\
+  range $a^x>0$ and x-axis is asymptote\\
+  and inverse to exponential is logarithmic.\\
+  $g(x)=log_a(x)$ passes (1,0)\\
+  if $a>1$ function increases\\
+  if $a<1$ function decreases\\
+  domain $x>0$, y-axis is asymptote\\
+  $a^x=y \Leftarrow\Rightarrow x=log_a(y)$\\
+  rules: $ln(x)=log_e(x)$\\
+  $ln(x)+ln(y)=ln(x\cdot y)$\\
+  $ln(x)-ln(y)=ln(\frac{x}{y})$\\
+  $ln(x^r)=r\cdot ln(x)$\\
+  $log_a(x)=\frac{ln(x)}{ln(a)} change the base$\\
+  $ln(1)=0, ln(e)=1$\\
+  $log_a(a^x)=x$\\
+  $D e^x=e^x$\\
+  $D ln(x)=\frac{1}{x}$\\
+  $D log_a(x)=\frac{1}{x\cdot ln(a)}$\\
+  $D a^x=a^x\cdot ln(a)$
+  \subsection{applications}
+  $f'(x)>0$ f increases\\
+  $f'(X)=0$ min,max,inflex\\
+  $f'(x)<0 $ f decreases\\
+  $f'(x)= slope of tangent$\\
+  $=velocity$\\
+  $=marginal cost, marginal revenue$\\
+  $f''(x)=acceleration$\\
+  $f''(X)>0 f concapes up, f has min$\\
+  $f''(x)<0$ f concanves down, f has max\\
+  coph 1. $f(x)=e^x$ and $g(x)=ln(1+2x)$\\
+  $a) write down f^{-1}(x)$\\
+  Ans: $f^{-1(x)}=ln(x)$\\
+  b) $f\circ g(x)=f (g(x))=f(ln(1+2x))$\\
+  $1+2x$\\
+  and $(f \circ g)^{-1}(x)=?=\frac{x-1}{2}$\\
+
+
+   
+\end{document}

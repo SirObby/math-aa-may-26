@@ -1,0 +1,72 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{16th of August 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+  
+  \subsection{homework}
+  HL ex.4,5,a,b,c p 116\\
+  5b) $f(x)=\frac{x-5}{x-3} g(x)=\frac{-2}{x-1}+3$\\
+  aer inverses if $f(g(x))=x$ and $g(f(x))=x$\\
+  Lets calculate\\
+  $f(g(x))=f(\frac{-2}{x-1}+3)=\frac{(\frac{-2}{x-1}+3)-5}{(\frac{-2}{x-1}+3)-3}$\\
+  $=\frac{\frac{-2}{x-1}-2}{\frac{-2}{x-1}}=\frac{\frac{-2}{x-1}-\frac{2(x-1)}{x-1}}{\frac{-2}{x-1}}=\frac{-2-2x+2}{x-1}\cdot (\frac{x-1}{-2})$\\
+  $=\frac{-2-2x+2}{-2}=\frac{-2x}{-2}=x$\\
+  4. $f(x)=(x-1)^2$\\
+  to find the inverse $y=(x-1)^2$\\
+  $\sqrt{y}=x-1$\\
+  $x=1+\sqrt{y}$\\
+  so $f^{-1}(x)=1+\sqrt{x}.$\\
+  $g (x)=2x+1$ to find the inverse\\
+  $y=2x+1$ sovle for x\\
+  $y-1=2x$\\
+  $\frac{y-1}{2}=x$\\
+  $y=\frac{x-1}{2}$\\
+  so $g^{-1}(x)=\frac{x-1}{2}$\\
+  Now LHS (=lefthandside)\\
+  $f^{-1}\circ g^{-1} (x)=f^{-1}(g^{\frac{
+    x-1
+  }{2}}=1+\sqrt{\frac{x-1}{2}}$\\
+  and RHS (=right hand side)\\
+  $(g\circ f)^{-1}(x)=(g(f(x)))^{-1}=(g((x-1)^2))^{-1}$\\
+  $=(2\cdot(x-1)^2+1)^{-1}$\\
+
+  \section{Limit of function and sequences}
+  (=funktion raja-arvo)\\
+  picture has a limit when x gets closer to right side infinity then f(x) gets closer / approaches value 2.\\
+  $\lim_{x\to\infty} (f(x))=2$\\
+  also if x is close to -10 then function is close to $-\infty$ $\lim_{x\to-10^+}(f(x))=-\infty$\\
+  and $\lim_{x\to-10^-}(f(x))=-\infty$\\
+  and $\lim_{x\to0}(f(x))=\infty$\\
+  To solve the limit of function:\\
+  1) graphical method. (just look at it) \\
+  2) numerically from table of x and y\\
+  3) algebrically method by cancelling(=supistaminen murtoluvulle) the fraction and then substitute.\\
+  If there is a unique value L then function is called convergent (=suppeneva) else divergent (=hajaantuva)\\
+  $L=\lim_{x\to a}(f(x))$\\
+  
+  Example. Find $\lim_{x\to3}(\frac{x^2-9}{x-3})$
+  Lets factorise by common factor. \\
+  $\lim_{x\to3}(\frac{(x+3)\cdot(x-3)}{(x-3)\cdot1})$\\
+  $\lim_{x\to3}(\frac{x+3}{1})=\frac{3+3}{1}=6$\\
+  after cancelling try to substitute if possible.\\
+  OR table method\\
+  x      $y=f(x)=\frac{x^2-9}{x-3}$\\
+  3.9    $\frac{(3.9^2-9)}{3.93}=6.9$\\
+  2.9  $\frac{(2.9)^2-9}{2.93}=5.9$\\
+  2.9999999 $\frac{2.9999999^2-9}{2.9999999-3}=6$\\
+  3.001      $\frac{3.000000001^2-9}{3.00000-3}=6$\\
+ it seems that limit is 6.\\
+  \section{hl p 223 graphical or cancelling.}
+  1) $-4$\\
+  2) $6$\\
+  3) $3, -1$\\
+  4) $3$\\
+
+  
+  
+
+   
+\end{document}

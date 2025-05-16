@@ -1,0 +1,45 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of May 2025}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\begin{document}
+  \maketitle
+   
+  \section{Normal distribution}
+  HL p 718\\
+  random variable X follows normal distribution with mean $\mu$.\\
+  and variance $\sigma^2$.\\
+  $X\approx N(\mu,\sigma^2)$\\
+  It is typical to many everyday life variable of polulation, hieight, weight, mass, time, scores etc.\\
+  Probability $P(X\leq a)=P(Z\leq\frac{a-\mu}{\sigma})=$table or calculator or graph\\
+  Graph is symmetrical mean of Z\\
+  is 0 and deviation $\sigma=1$\\
+  $P(X>a)=1-P(X\leq a)$\\
+  $P(a\leq x\leq b)=P(X\leq b)-P(x\leq a)$\\
+  normCdf(a,b,$\mu$,$\sigma$)=normCdf(b)-normCdf(a)\\
+  Example.\\
+  The mean height of babies is 50 cm and deviaation 3cm. Find probability the height is less than 53cm.\\
+  paper 1 style: Normal distribution.\\
+  From the graph $P(height<53)=50\%+34\%=84\%=0.84$\\
+  or $2\%+14\%+34\%+14\%=0.84$\\
+  $normCdf(-10000,53,50,3)=0.8413$\\
+  normCdf(lowerbound,upper, mean, deviation)\\
+  b) Find the probability that height is more than 48 cm\\
+  $P(X>48)=normCdf(48,1000,50,3)=0.747$\\
+  c) $Find the prob that baby is about 49-51$\\
+  $P(49<X<51)=normCdf(49,51,50,3)=0.2611$\\
+  hl p 722 ex 1-6\\
+  1. $a)=normCdf(0.5,1.5,2,3)=0.125$\\
+  b) $normCdf(-\infty,0.5,2,3)=0.308$\\
+  c) $normCdf(2,\infty,2,3)=0.5$\\
+  2. \\
+  a) $normCdf(-\infty,25,30,8)=0.265$\\
+  b) $normCdf(17,35,30,8)=0.681$\\
+  c) $normCdf(x\geq 12)=0.987$\\
+    
+
+   
+\end{document}

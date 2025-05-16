@@ -1,0 +1,113 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Cyclic integration}
+  p 509 Hl only\\
+  =integration by parts repeated.\\
+  used with trigonometric and exponential functions.\\
+  $\int (u\cdot v')=dx =u\cdot v-\int (u'\cdot v)dx$\\
+
+  Example.\\
+  $\int_{0}^{\pi}(x^2\cdot sin(x))dx$\\
+  substitute: $u=x^2, du=2x$\\
+  $v'=sin(x), v=-cos(x)$\\
+  $\int (x^2\cdot sin(x))dx=x^2\cdot -cos(x)-\int(2x\cdot -cos(x))dx$\\
+  repeat. $u=2x,u'=2$\\
+  $v'=cos(x), v=sin(x)$\\
+  =$x^2\cdot -cos(x)+2x\cdot sin(x)-\int (2\cdot sin(x))dx$\\
+  $=-x^2cos(x)+2x\cdot sin(x)-2\cdot (cos(x))$\\
+  and substitutions.\\
+  $-\pi^2 cos(\pi)+2\pi\cdot sin(\pi)-2\cdot (-cos\pi)$\\
+  $-(0^2cos(0)+2\cdot0\sin (0)-2\cdot (-cos(0))$\\
+  $-\pi^2\cdot (-1)+0+2\cdot(-1)-(0+0+2\cdot1)$\\
+  $\pi^2$\\
+  Example 2. evaluate \\
+  $\int (e^x\cdot sin(x))dx$\\
+  partial integration.\\
+  $u=e^x, u'=e^x$\\
+  $v'=sin(x), v=-cos(x)$\\
+  $e^x\cdot (-cos(x))-\int(e^x-cos(x))dx$\\
+  $e^x\cdot(-cos(x)) + \int(e^x\cdot cos(x))dx$\\
+  partial integration again.\\
+  $u=e^x, u'=e^x$\\
+  $v'=cos(x), v=sin(x)$\\
+  $=e^x\cdot (-cos(x))+ e^x\cdot sin(x)-\int(e^x\cdot sin(x))dx$\\
+  equation:\\
+  $e\cdot\int(x^x\cdot sin(x))dx=e^x\cdot sin(x)-e^x\cdot cos(x) ||:2$\\
+  $\int(e^x\cdot sin(x))dx=\frac{e^x\cdot sin(x)-e^x\cdot cos(x)}{2}+C$\\
+  p 509 ex 7L:1-5 + 7K\\
+  1. $\int (tan x\cdot sec^x)dx=$\\
+  partial integration: $u=tan(x), u'=sec^2x$\\
+  $v'sec^2x=,v=tan(x)$\\
+  $=tan(x)\cdot tan(x)-\int(sec^2x\cdot an(x))dx$\\
+  equation:\\
+  $2\cdot \int (tan(x)\cdot sec^2x)dx=tan(x)\cdot tan(x)$\\
+  $\int( tan(x) \cdot sec^2x)dx=\frac{tan^2x}{2}+C$\\
+  ex 2.\\
+  $\int( sin(x)\cdot cos(x))dx$\\
+  partial integration.\\
+  $u=sin(x), u'=cos(x)$\\
+  $v'=cos(x), v=sin(x)$\\
+  $\int (sin x\cdot cos x))dx=sin(x)\cdot sin(x)-\int(cos(x)\cdot sin(x))dx$\\
+  equation gives:\\
+  $2\cdot \int(sin(x)\cdot cos(x))dx=sin (x)\cdot sin(x)$ \\
+  $\int(sin(x)\cdot cos(x))dx=\frac{sin(x)\cdot sin(x)}{2}$\\
+  ex 3.\\
+  $\int (sin2x\cdot cos3x)dx$\\
+  $u=sin(2x), u'=cos(2x)\cdot2$\\
+  $y'=cos(3x), v=\frac{sin(3x)}{3}$\\
+  $\int (sin(2x)\cdot cos(3x))dx=sin(2x)\cdot\frac{sin(3x)}{3}-\int(cos(2x)\cdot 2\cdot\frac{sin(3x)}{3})dx$\\
+  $=\frac{sin(2x)\cdot sin(3x)}{3}-\frac{2}{3}\int (cos (2x)\cdot sin(3x))dx$\\
+  partial integration again!\\
+  $u=cos(2x), u'=2sin(2x)$\\
+  $v'=sin(3x), v=\int(sin (3x)\cdot 3)dx=\frac{-cos(3x)}{3}$\\
+  $\frac{sin(2x)\cdot sin(3x)}{3}-\frac{2}{3}(cos(2x\cdot \frac{-cos(3x))}{3}))- \int(2\cdot sin(2x)\cdot \frac{-cos(3x)}{3})dx$\\
+  $=\frac{sin(2x)\cdot sin(3x)}{3}+\frac{2}{9}\cdot (cos(2x)\cdot cos(3x))+\frac{2\cdot2}{3\cdot3}\int(sin(2x)\cdot cos(3x))dx$\\
+  Now equation:\\
+  $\int sin(2x)cos(3x) dx+ \frac{4}{9}\int (sin(2x)\cdot cos(3x))dx$\\
+  $=\frac{sin(2x)\cdot sin(3x)}{3}+\frac{2}{9}(cos(2x)\cdot cos(3x))$\\
+  $\frac{9+4}{9}\int(sin(2x)\cdot cos(3x))dx=\frac{sin(2x)\cdot sin(3x)}{3}+\frac{2}{9}(cos(2x)\cdot cos(3x))$\\
+  Ans: $\int(sin(2x)\cdot cos(3x))dx=\frac{9\cdot sin(2x)sin(3x)}{13\cdot3}+\frac{9}{13}\cdot(\frac{2}{9})\cdot cos(2x)cos(3x)+C$\\
+  ex 4. $\int (e^{3x}cos(2x))dx=i$ partial integration\\
+  $u=e^{3x}, u'=e^{3x}\cdot D(3x)=e^{3x}\cdot 3$\\
+  $v'=cos(2x), v=\int(cos(2x)\cdot2)dx$\\
+  $v=\frac{-sin(2x)}{2}$\\
+  $i=e^{3x}\cdot(\frac{-sin(2x)}{2})-\int (e^{3x}\cdot 3\cdot (\frac{-sin(2x)}{2}))dx$\\
+  $=\frac{-e^{3x}sin(2x)}{2}+\frac{3}{2}\int(e^{3x}\cdot sin(2x))dx$\\
+  partial integration again!\\
+  $u=e^{3x}, u'=3\cdot e^{3x}$\\
+  $v'=sin(2x), v=\frac{1}2{}\int(sin(2x)\cdot 2)dx=\frac{-cos(2x)}{2}$\\
+  now i=$\frac{-e^{3x}sin(2x)}{2}+\frac{3}{2}(e^{3x}\cdot \frac{-cos(2x)}{2}-\int(3e^{3x}\cdot\frac{-cos(2x)}{2}))$\\
+  $i=\frac{-e^{3x}sin(2x)}{2}-\frac{3}{2}e^{3x}\cdot\frac{cos(2x)}{2}+\frac{3\cdot3}{2\cdot2}I$\\
+  equation:\\
+  $I\frac{4+9}{4}I=\frac{-e^{3x}sin(2x)}{2}-\frac{3}{4}e^{3x}\cdot cos(2x)$\\
+  $i=\frac{4}{13}\cdot (\frac{1}{4}\cdot(-2\cdot e^{3x}sin(2x)-3e^{3x}cos(2x)))$\\
+  $i=\frac{-e^{3x}}{13}(2\cdot sin(2x)+3cos(2x))+C$\\
+  ex. 5\\
+  $\int sin^2x dx=\int (sin(2x)\cdot sin(2x))dx$\\
+  partial integration $u=sin(2x), u'=cos(x)$\\
+  $v'=sin(x),v=-cos(2x)$\\
+  $=sin(x)\cdot (-cos(x))-\int(cos(x)\cdot -cos(x))dx$\\
+  $=-sin(x)cos(x)+\int (cos(x)\cdot cos(x))dx$\\
+  partial integration.\\
+  $u=cos(x), u'=-sin(x)$\\
+  $v'=cos(x), v=sin(x)$\\
+  $=-sin(x)cos(x)+cos(x)\cdot sin(x)-\int(-sin(x)\cdot sin(x))dx$\\
+  now equation\\
+  $\int (sin^2x)dx=-sin(x)cos(x)+cos(x)sin(x)+\int(sin^2x)dx$\\
+  leads into $I - I = 0$\\
+  $0=0$\\
+  so let's do something else\\
+  $-sin(x)cos(x)+\int(cos(x)\cdot cos(x))dx$\\
+  $I=-sin(x)cos(x)+\int(1-sin^2x)dx$\\
+  $I=-sin(x)cos(x)+x-\int(sin^2x)dx$\\
+  $I+I=x-sin(x)cos(x) |:2$\\
+  $I=\frac{x-sin(x)cos(x)}{2}+C$\\
+   
+
+\end{document}

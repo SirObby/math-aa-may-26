@@ -1,0 +1,107 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of April 2025}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\begin{document}
+  \maketitle
+   
+  \section{Discrete random variable}
+  HL p 696\\
+  A random variable = quantity whose value depends on chance (X,Y,Z)\\
+  distribution assigns probability to each of these values.\\
+  Example Toss 3 coins. Discrete random variable X is the number of tails obtained.\\
+  X= number of tails:\\
+  distribution, Table one.\\
+  \begin{table}
+    \caption{}\label{tab:}
+      \begin{tabular}[c]{l|l}
+        \hline
+        \multicolumn{1}{c|}{\textbf{}} & 
+        \multicolumn{1}{c}{\textbf{}} \\
+        \hline
+        X & P(X=x) \\
+        0 & P(Head,Head,Head)=$\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}=\frac{1}{8}$ \\
+        1 & (THH,HTH,HHT)=$\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}+\frac{1}{2}\cdot\frac{1}{2}\frac{1}{2}+\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}=\frac{3}{8}$ \\
+        2 & (TTH,HTT,HTH)=$\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}+\frac{1}{2}\cdot\frac{1}{2}\frac{1}{2}+\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}=\frac{3}{8}$\\
+        3 & (TTT)=$\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}=\frac{1}{8}$ \\
+        \hline
+      \end{tabular}
+  \end{table}
+  sum of all P=$\frac{8}{8}=1=100\%$\\
+  table has Probability Distribution Function=PDF\\
+  calculator also has CDF=Cumulative Distribution Function.\\
+  mean=$\mu=$expected value=E(X)=$\sum x_i\cdot p_i$\\
+  Where i refers to row of distribution table.\\
+  Example Fidn the expected value fo tossing 3 coins.\\
+  $E(X)=0\cdot (\frac{1}{8}+1\cdot\frac{3}{8}+2\cdot\frac{3}{8}+3\cdot\frac{1}{8}$\\
+  $=\frac{0\cdot (\frac{1}{8}+1\cdot\frac{3}{8}+2\cdot\frac{3}{8}+3\cdot\frac{1}{8}}{8}=\frac{3}{2}$\\
+  HL only variance $\sigma^2=Var(X)=E(X^2)-(E(X))^2$ or\\
+  $\sum x^2\cdot p-\mu ^2$ (see infobooklet)\\
+  standard deviation=$\sigma=\sqrt{Var(X)}$\\
+  mode=the most typical value, with highest $p_i$.\\
+  Example 3. Find mean, mode, and standard deviation of tossing 3 coins.\\
+  $mean=expected value=example 2=\frac{3}{2}=1.5$ coins.\\
+  mode=$most typical=1 tail and 2 tails are both modes!$\\
+  standard deviation=$\sqrt{Var(X)}$\\
+  $Var(X)=\sum(x_i-\mu)^2\cdot P(X_i)$\\
+  $(0-3/2)^2\cdot\frac{1}{8}+(1-\frac{3}{2})^2\cdot\frac{3}{8}+(2-\frac{3}{2})^2\cdot\frac{3}{8}+(3-\frac{3}{2})^2\cdot\frac{1}{8}$\\
+  $=0.75$\\
+  $deviation=\mu=\sqrt{0.75}=0.86$\\
+  $\sum(X=x)=1$\\
+  HL p 699 ex 1,2 p 701 ex 1,2 p 705 ex 1,2\\
+  1. a) $0+0.1+0.2+0.3+0.4=1$ yes, valid.\\
+  b) $0.3+0.3+0.3+0.3+0.3=1.5$ not valid.\\
+  2. i. (Table 2), invalid. \\
+  \begin{table}
+    \caption{}\label{tab:}
+    \begin{center}
+      \begin{tabular}[c]{l|l}
+        \hline
+        \multicolumn{1}{c|}{\textbf{}} & 
+        \multicolumn{1}{c}{\textbf{}} \\
+        \hline
+        0 & $\frac{1}{2}0^3=0$ \\
+        1 & $\frac{1}{2}1^3=0.5$ \\
+        2 & $\frac{1}{2}2^3=4$\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+  ii. (Table 3) Invalid.\\
+  \begin{table}
+    \caption{}\label{tab:}
+    \begin{center}
+      \begin{tabular}[c]{l|l}
+        \hline
+        \multicolumn{1}{c|}{\textbf{}} & 
+        \multicolumn{1}{c}{\textbf{}} \\
+        \hline
+        0 & $\frac{0!}{5\cdot0+2}=0.5$ \\
+        1 & $\frac{1!}{5+2}=0,14285714285714285714$ \\
+        2 & $\frac{2!}{5\cdot2+2}=0,16666666666666666667$\\
+        3 & $\frac{3!}{5\cdot3+2}=0,35294117647058823529$\\
+        4 & $\frac{4!}{5\cdot4+2}=1,09090909090909090909$\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+  701,1. \\
+  $E(X)=\sum (x_i\cdot p_i)$\\
+  $0\cdot\frac{1}{6}+1\cdot\frac{1}{6}+2\cdot\frac{1}{3}+3\cdot\frac{1}{4}+4\cdot\frac{1}{12}=1,91666666666666666667$\\
+  2. $0.1+0.2+k+2k+k-0.1=1$\\
+  k≈0.21951\\
+  $E(X)=\sum (x_1\cdot p_1)$\\
+  $4\cdot0.1+5\cdot0.2+6\cdot k+ 7\cdot 2k+8\cdot (k-0.1)$\\
+  $=55,94628$\\
+  705,1.\\
+  a) $1\cdot\frac{1}{8}+2\cdot\frac{3}{8}+3\cdot\frac{1}{2}$\\
+  $=2,375$\\
+  b) $E(5X)$\\
+
+  
+
+   
+\end{document}

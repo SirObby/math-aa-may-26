@@ -1,0 +1,42 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{2nd of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Optimization with geometry hl p 278}
+  * Read the text and draw a sketch or table\\
+  * Choose variable x (like side, radius, height >0)\\
+  * write an equation (like $V=(\pi r^2\cdot h)=330$)\\
+  * find the extrema point (min or max)\\
+  from 1) the endpoints of interval r>0,h>0\\
+  or 2) the $f'(x)=0$\\
+  * give the answer with units\\
+  Example investigationhl 23, sl 19 \\
+  1. surface area of can $A=rectangle+2circles$\\
+  $=2\pi\cdot r\cdot h+2\cdot(\pi r^2)$\\
+  2. volume = $base\cdot height=2\cdot r^2\cdot h=330 (cm^3=ml)$\\
+  3. area in terms of r means that we need to solve h=?\\
+  $\pi r^2\cdot h=330$\\
+  $h=\frac{330}{\pi\cdot r^2}$\\
+  substitute area = $2\pi\cdot r\cdot h+ 2\cdot(\pi r^2)$\\
+  $=2\cdot pi\cdot r\cdot (\frac{330}{\pi\cdot r^2})+2\cdot\pi r^2$\\
+  cancel r and and pi $\frac{660}{r}+2\pi\cdot r^2=A(r)$\\
+  4. $A'(r)= D(660\cdot r^{-1}+2\cdot r^2)$\\
+  $=-1\cdot660\cdot r^{-2}+2\pi\cdot 2\cdot r^1$\\
+  $=\frac{-660}{r^2}+4\pi\cdot r$ to find the min $f''(x)>0$ and $f'(x)=0$\\
+  $nSolve(\frac{-660}{r^2}+4\pi\cdot r=0,r)$=3.74494\\
+  $r=\sqrt[3]{\frac{660}{4\cdot\pi}}$\\
+  $f''(x)=D(1\cdot 666\cdot r^{-2}+2\cdot\pi\cdot2\cdot r^1)$\\
+  $=-660\cdot(-2)r^{-3}+4\pi=\frac{1320}{r^3}+4\pi$\\
+  $f''(\sqrt[3]{\frac{660}{4\cdot\pi}})=\frac{1320}{(\sqrt[3]{\frac{660}{4\pi}})}+4\pi$>0\\
+  since f''(x)>0 f concaves up and f has minimum surface area if $r=\sqrt[3]{\frac{660}{4\pi}}$\\
+  and $h=\frac{330}{\pi\cdot r^2}=\frac{330}{\pi\cdot3.74}=28$\\
+  Ans: radius 3,7cm and height 28.0cm\\
+  
+  
+
+   
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of April 2025}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Addition rule}
+  hl p 687\\
+  $P(A or B)=P(A\cup B)=P(A)+P(B)-P(A\cap B)$\\
+  and Venn diagram and complement can be used.\\
+  $(A \cup B)'=A'\cap B'$\\
+  $(A \cap B)')A'\cup B'$\\
+  Mutually exclusive(=toisesna poissulkeva) events does not have common elements. $A\cap B=\varnothing$ empty set\\
+  Eggcercises:\\
+  1. A ten sided dice, number 1to10 is rolled. Calculate prob:\\
+  a) THe number rolled is a prime number.\\
+  $1,2,3,5,7$\\
+  $P(prime)=\frac{5}{10}=\frac{1}{2}$\\
+  $P(prime or multiple o f3)=P(prime)+P(miltiple)-(Pprime and multiple of 3)=\frac{1}{2}+\frac{3}{10}-\frac{1}{10}=\frac{5+3-1}{10}=\frac{7}{10}$\\
+  c) $P(multiple of 3 or 4)=P(multiple of 3)+P(multiple  of 4)-P(both)$\\
+  $\frac{3}{10}+\frac{2}{10}-0=\frac{5}{10}$\\
+  $\frac{1}{2}$\\
+  2. $P(camera owner or female)$\\
+  $P(camera owner)+P(female)-P(both)$\\
+  $\frac{30}{55}+\frac{25}{55}-\frac{18}{55}=\frac{37}{55}$\\
+  3. \\
+  a) $\frac{(M,A,T,H,E,I,C,S)}{26}=\frac{8}{26}$\\
+  b) $\frac{(T,R,I,G,O,N,M,E,Y)}{26}=\frac{9}{26}$\\
+  c) $P(Mathematics and triogonometry)=P(mathematics \cap trigonometry)=\frac{(M,T,E,I)}{26}=\frac{4}{26}=\frac{2}{13}$\\
+  d) $\frac{math or trig}{26}=\frac{8+9-4}{26}=\frac{13}{26}=\frac{1}{2}$\\
+  4. \\
+  a) $P(fiction book, non fiction book, or both.)=0.4+0.3-0.2=0.5$\\
+  b) $1-0.5=0.5$\\
+  5. a) $P(X\cup Y)=\frac{1}{4}+\frac{1}{8}-\frac{1}{8}=\frac{1}{4}$\\
+  b) $1-\frac{1}{4}=\frac{3}{4}$\\
+  6. \\
+  a) $P(A\cap B)=$\\
+  $P(A\cup B)=P(A)+P(B)-P(A\cap B)$\\
+  $0.5=0.2+0.4-P(A\cap B)$\\
+  $P(A\cap B)=0.6-0.5=0.1$\\
+  b) $1-(P(A)-P(A\cap B))$\\
+  $1-(0.2-0.1)=0.9$\\
+  7. \\
+  a) $P(A\cup B)=P(A)+P(B)-P(A\cap B)$\\
+  $3x=\frac{3}{16}+\frac{3}{8}-x$\\
+  $4x-=\frac{3}{16}+\frac{6}{16}$\\
+  $4x=\frac{9}{16}$\\
+  $x=\frac{9}{16}\cdot\displaystyle\frac{1}{4}$\\
+  $x=\frac{9}{64}$\\
+  $P(A\cup B)=3x=\frac{3\cdot9}{64}=\frac{27}{64}$
+  b) $1-\frac{27}{64}=\frac{64-27}{64}$\\
+  c) $P(A)-P(P\cap B)$\\
+  $=\frac{3}{16}-x$\\
+  $x=\frac{3}{16}-\frac{9}{64}$\\
+  $\frac{12-9}{64}=\frac{3}{64}$\\
+  
+
+   
+\end{document}

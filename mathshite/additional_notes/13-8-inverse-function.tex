@@ -1,0 +1,77 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{13th of August 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \subsection{homework}
+  (sl book)p90 ex3\\
+  a) $g(f(0))=g(0)=-4$\\
+  b) $g(f(1))=g(1)=-3$\\
+  (hl)\\
+  hl p 111 ex 4\\
+  $f(x)=3x+a;g(x)=\frac{x-4}{3}$\\
+  equation $f(g(x)) = g(f(x))$ subst\\
+  $f(\frac{x-4}{3})=g(3x+a)$\\
+  $3\cdot(\frac{x-4}{3})+a=\frac{(3x+a)-4}{3}$\\
+  $x-4+a=\frac{3x+a-4}{3} || \cdot3$\\
+  $3x-12+4a=3x+a-4$\\
+  $2a=8$\\
+  $a=4$\\
+  ex 4a) \\
+  $f(g(x))=x^2-2x+3$ \\
+  $f(x)=x+3$\\
+  $g(x)=x^2-2$\\
+
+  \section{Inverse function}
+  HL p112\\
+  Inverse function $f^{-1}(x)$ reverses the action of $f(x)$\\
+  Definition: $f^{-1}(f(x))=x=f(f^{-1}(x))$.\\ 
+  Note! f must be one-to-one function so that $f^{-1}$ exists.\\
+  Example find the inverse of $f(x)=\sqrt{x-2}+3$\\
+  1) Write $f(x)=y$\\
+  2) solve for x.\\
+  3) interchange x and y.\\
+  4) write $f^{-1}(x)=y=...$\\
+  Ans: \\
+  $y=\sqrt{x-2}+3 ||-3$\\
+  $y-3=\sqrt{x-2} || ()^2$\\
+  $(y-3)^2=x-2$\\
+  $x-2=(y-3)^2$\\
+  $x=(y-3)^2+2$ change x and y\\
+  $y=(x-3)^2+2$ for $f^{-1}(x)=(x-3)^2+2$\\
+  or $f^{-1}(y)=(y-3)^2+2, x\geq3$
+  b) Sketch $f(x)$ and $f^{-1}(x)$\\
+  function and the inverse function are symmetrical about line $y=x$.\\
+  Example 2. Determine whether f and g are inverse. $f(x)=\sqrt{x^2-7}+x, g(x)=2-x$\\
+  Lets find\\
+  $f(g(x))=f(2-x)=\sqrt{(2-x)^2-7}+(2-x)\neq x$\\
+  since $\sqrt{(2-x)^2-7}\neq0 for all x.$\\
+  Ans: No.\\
+  
+  \section{hl book p 116 ex a only }
+  1. a) $f(x)=\{(4,2)(0,2)(-2,2),(2,2)\}$\\
+  does not have inverse.\\
+  2. a) $y=5x-1$\\
+  $y=5x-1 || +1$\\
+  $x+1=5y$\\
+  $5y=x+1$\\
+  $y=\frac{x+1}{5}$.\\
+  $f^{-1}(x)=\frac{x+1}{5}$\\
+  $f^{-1}(f(x))=\frac{(5x-1)+1}{5}$\\
+  3. a) $f(x)=y=(x-2)^2$\\
+  1) Write $y=(x-2)^2 || \sqrt{}$ solve for x\\
+  $\pm\sqrt{y}=x-2$\\
+  $2\pm\sqrt{y}=x$ interchange\\
+  $y=2\pm\sqrt{x}$\\
+  inverse function is\\
+  1) $f^{-1}(x)=2+\sqrt{x}, for x$\\
+  or 2) $f^{-1}(x)=2-\sqrt{x}, for x$\\
+  domain of f = range of $f^{-1}=[2,\infty]$ in case 1\\
+  or $[-\infty, 2]$
+  
+  
+   
+\end{document}

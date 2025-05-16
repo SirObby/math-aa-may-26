@@ -1,0 +1,49 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of May 2025}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\begin{document}
+  \maketitle
+   
+  \section{Inverse normal distribution}
+  hl p 723\\
+  $X~N(\mu,\sigma)$\\
+  standardized $Z~N(\mu=0,\sigma=1) Z=\frac{x-\mu}{\sigma}$ \\
+  inversenormal $\phi^{-1}(Probability)$\\
+  gives the value of Z so that $P(Z<z)=probability$\\
+  GDC $invNorm(area=probability,mean,deviation)$\\
+  Example. Find the value of mean $\mu$ if random variable has variance $0.3^2$ and $P(X<2)=0.75$\\
+  Standardize $Z=\frac{2-\mu}{0.3}$ since $\sigma=0.3$ and var $0.3^2$\\
+  $P(x<2)=0.75$ and area $=0.75$\\
+  $Z=invNorm(0.75,0,1)=0.674$\\
+  substitute $Z=\frac{2\mu}{0.3}=0.6744$\\
+  $2-\mu=0.3\cdot0.6744$\\
+  $2-0.3\cdot0.67449=\mu$\\
+  $1.797$\\
+  ans mean: $1.80(3.sf)$\\
+  HL p 724 ex 1-6\\
+  1. $Z~N(8,\sigma^2)$ find $\sigma^2$, $P(X\leq 4)=0.321$\\
+  Standrdize $Z=\frac{4-8}{\sigma}$\\
+  $Z=inverseNormal(0.321,0.1)=-0.464$\\
+  $-4=-0.4640\cdot\sigma$\\
+  $\sigma=\frac{-4}{-0.464}=8.603$ Ans $\sigma^2=8.603^2=74.02$\\
+  2. \\
+  $P(X\leq 1)=0.345$\\
+  $P(X\leq 3)=0.943$\\
+  standardized $\frac{1-\mu}{\sigma}=invnorm(0.345,0,1)=-0.3988$\\
+  $\frac{3-\mu}{\sigma}=invnormal(0.943,0,1)=1.580$\\
+  \begin{cases}
+    $1-x=0.398855\cdot y$\\
+    $3-x=1.580\cdot y$
+  \end{cases}
+  Ans: $\mu=1.40$ and $sigma=1.01$\\
+  3. $\mu=1.02kg$\\
+  $P(X\leq 1)=0.013$\\
+  $Z=\frac{1-1.02}{\sigma}=invNormal(0.013,0,1)$\\
+
+
+
+\end{document}

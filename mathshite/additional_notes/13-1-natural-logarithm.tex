@@ -1,0 +1,63 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Natural logarithm}
+  p 474\\
+  1) investigation hl p 473\\
+  increase 2\% means $1+0.02=1.02$ factor.\\
+  at the beginning $1000$\\
+  after 1 year $1000\cdot1.02$=1020\\
+  after 2 years $(1000\cdot1.02)\cdot1.02=1000\cdot(1.02)^2$\\
+  after 3 years $1000\cdot(1.02)^3$\\
+  $1000\cdot1.02^n$\\
+  $\lim_{n\to\infty}(1000\cdot1.02^n)=?$\\
+  
+  if interest increases\\
+  factor $(1+\frac{1}{n})^n$\\
+  $lim_{n\to\infty}((1+\frac{1}{n})^n)=e$\\
+  2) natural number $e=2.71828$\\
+  3) natural logarithm $log_3(x)=ln(x)$\\
+  
+  has rules $e^x=y$, $x=ln(y)$\\
+  $e^{ln(y)}=y$ and $ln(e^y)=y$\\
+  $ln(a)+ln(b)=ln(a\cdot b)$\\
+  $lin(a)-ln(b)=ln(\frac{a}{b})$\\
+  $ln(a^r)=r\cdot ln(a)$\\
+  change of base: $log_a(x)=\frac{log_b(x)}{log_b(a)}=\frac{ln(x)}{ln(a)}$\\
+  Example: Find\\
+  a) $log_3(7)=1.77124$\\
+  $\frac{ln(y)}{ln(3)}=1.77124$\\
+  b) $log_4(10)+log_2(10)$\\
+  $=\frac{log_2(10)}{log_2(4)}+log_2(10)=\frac{log_2(10)}{log_2(2^2)}+log_2(10)$\\
+  $=\frac{1}{2}\cdot log_2(10)+log_2(10)$\\
+  $log_2(10^{\frac{1}{2}})+log_2(10)=log_2(\sqrt{10}\cdot10)$\\
+  \subsection{ex 9J and 9K, copy}
+  1. simplify a) $ln(e^3)=3$
+  same base $e$ in log and exp cancels off.\\
+  b) $ln(e^4)=4$\\
+  c) $ln(\sqrt{e})=ln(e^\frac{1}{2})=0.5$\\
+  2.a) $e^{ln(2)})=2$\\
+  b) $e^{ln(3)}=3$\\
+  c) $e^{ln(x)}=x$\\
+  3. a) $ln(x)=2.7$\\
+  $x=e^{2.7}=14.9$\\
+  b) $ln(x+1)=1.86$\\
+  x=5.42374\\
+  4. $e^{x\cdot ln(a)}$\\
+  $e^{ln(x\cdot a)}$\\
+  $x\cdot a$\\
+  9K\\
+  1. a) $log_3(8)$\\
+  $=\frac{ln(8)}{ln(3)}=1.89$\\
+  b) $log_6(24)=\frac{ln(24)}{ln(6)}$\\
+
+  NOTE: $ln(e)=ln(e^1)=1$\\
+
+
+   
+\end{document}

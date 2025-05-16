@@ -1,0 +1,89 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Equations of log and exponents}
+  HL p 472\\
+  paper 2 methods: graphs intersect x=$nsolve(equation,x,a guess)$\\
+  paper 1 method:\\
+  definition: $a^b=c   ===== log_a(c)=b$\\
+  and rules of log and exponents\\
+  Example. Solve a) $2\cdot5^x=200$\\
+  $5^x=100$\\
+  $log_5(100)=x=2.86$\\
+  b) $x^{x-3}=16^x$\\
+  equal base, equal exponents\\
+  $2^{x-3}=(2^4)^x$\\
+  $2^{x-3}=2^{4x} || log_2()$\\
+  $x-3=4x$\\
+  $x=-1$\\
+  c) solve $e^x=17$\\
+  $ln(e^x)=ln(17)$\\
+  $x=ln(17)=2.83$\\
+  d solve the inequality\\
+  $6^x>3^{x+1} || ln() increasing function$\\
+  $ln(6^x)>ln(3^x+1)$\\
+  $x\cdot ln(6)>(x+1)\cdot ln(3)$\\
+  $x ln 6 > x ln 30 ln3$\\
+  $x ln 6 - x ln 3 > ln 3$\\
+  $x\cdot(ln 6 - ln 3) > ln3$\\
+  $x\cdot ln(\frac{6}{3})>ln 3$\\
+  $x\cdot ln(2)>ln 3$\\
+  $x>\frac{ln 3}{ln 2}$\\
+  $x>log_2(3)$\\
+  e) $3\cdot 2^x=4^x-10$ a tpical exam question!\\
+  $3\cdot 2^x-(2^2)^x+10=0$\\
+  $3\cdot2^x-2^{x\cdot2}+10=0$\\
+  $-(2^x)^2+3\cdot(2^x)+10=0$\\ 
+  lets substitute $t=2^x$\\
+  $-t^2+3\cdot t+10=0$ qiadratic formula $a=-1,b3=,c=10$\\
+  $t=\frac{-3\pm\sqrt{3-4\cdot(-1)\cdot10}}{2\cdot(-1)}=\frac{-3\pm\sqrt{9+40}}{-2}$\\
+  $t=\frac{-3+7}{-2}=-2 or t=\frac{-3-7}{-2}=5$\\
+  $t=2^x 2^x=-2$\\
+  or $2^x=5$\\
+  $x=log_2(-2)$\\
+  no solution $log has domain >0$\\
+  $x=log_2(5)$\\
+  $=2.32$\\
+  g) solve $log_4(x)=2$\\
+  $x=16$\\
+  h) $log_x(3)=\frac{1}{2}$\\
+  $x^{\frac{1}{2}}=3$\\
+  $x=3^2$\\
+  $x=9$\\
+  \subsection{copy 9L}
+  HL page 472: 11-17,
+  COPY 9L:
+  1a) $2^x=5$\\
+  $log_2(5)=x=2.32$\\
+  b) $3^x=17$\\
+  $log_3(17)=x=2.57$\\
+  c) $9^x=49$\\
+  $log_9(49)=x=1.77$\\
+  d) $3^x=69$\\
+  $log_3(69)=x=3.85$\\
+  2a) $2^{4x}=9$\\
+  $4x=log_2(9)$\\
+  $x=\frac{log_29}{4}$\\
+  2b) $6^{3x}=4$\\
+  $3x=log_6(4)$\\
+  $x=\frac{log_64}{3}=0.257$\\
+  3a) $6\cdot 2^x=14$\\
+  $2^x=\frac{14}{6}$\\
+  $2^x=\frac{7}{3}$\\
+  $x=log_2(\frac{7}{3})$\\
+  $=1.222$\\
+  3b) $3\cdot 6^{3x}=16$\\
+  $6^{3x}=4$\\
+  $3x=log_6(4)$\\
+  $x=\frac{log_64}{3}$\\
+  =$0.257$\\
+
+  
+  
+
+\end{document}

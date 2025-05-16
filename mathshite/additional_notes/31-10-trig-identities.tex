@@ -1,0 +1,87 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+  
+  \subsection{Previous hw}
+  ex4. $cosec (x)=\frac{13}{5}, \frac{\pi}{2}<x<\pi$\\
+  $cosec(x)=\frac{1}{\sin x}=\frac{hypotenuse}{opposite}=\frac{13}{5}$\\
+  adjacent side in right triangle=$\sqrt{13^2-5^2}=12$\\
+  angle is in 2. quadrant where $sin(x)>0$ and $cos(x)<0$. Sides of triangle are 5,12,13 and the sign comes from the unit circle.\\
+  $cos(x)=\frac{adjacent}{hypotenuse}=+\frac{12}{13}$\\
+  $cot(x)=\frac{1}{tan(x)}=\frac{cos(x)}{sin(x)}=\frac{adjacent}{opposite}=-\frac{12}{5}$\\
+  ex5. $sec(x)=-\frac{5}{4} and \pi<x<2\pi$ so 3 or 4. quadrant \\
+  $\frac{1}{\cos x}=\frac{hypotenuse}{adjacent}=\frac{-5}{4}$\\
+  since $cos(x)<0$ must be 3. quadrant\\
+  and $\sin x is negative$\\
+  $\cos x=\frac{-4}{5}$\\
+  $\sin x=-\frac{opposite}{hypotenuse}=-\frac{3}{5}$\\
+  opposite side in right triangle is $\sqrt{5^2-4^2}=3$\\
+  Note! with calculator $\cos^{-1}(\frac{-4}{5})=143.13$\\
+  cos has $\pm143.13\degree$\\
+  $sin(-1.43.13)=-0.6$\\
+
+  \section{Trigonometric Identities}
+  HL p400\\
+  $\sin^2(x)+\cos^2(x)=1$, this equation is true for all x-values.\\
+  This may lead into 2. degree eq\\
+  $a\cdot x^2+b\cdot x+c=0$ and $\pm$, but use unit circle\\
+  and $\tan x=\frac{\sin x}{\cos x}, x\neq\frac{\pm\pi}{2}$\\
+  and unit circle to choose positive or negative!\\
+  Example 1. Given that $\cos x=\frac{4}{5}$ and $0<x<\frac{\pi}{2}$\\
+  Find $\sin x$ and $\tan x$.\\
+  angle belongs into $1.$ quadrant and $\sin x>0$, $tan(x)>0$\\
+  identity $sin^2(x)+cos^2(x)=1$\\
+  subst. $sin^2(x)+\frac{4}{5}^2=1$\\
+  $sin^2(x)=1-\frac{16}{25}||\pm\sqrt{}$\\
+  $\sin x=\pm\sqrt{\frac{25-16}{25}}$\\
+  $\sin x=\frac{\pm3}{5} and sin x>0$\\
+  so $\sin x=\frac{3}{5}$ and $\tan x=\frac{\sin x}{\cos x}=\frac{3/5}{4/5}=\frac{3}{5}\cdot(\frac{5}{4})=\frac{3}{4}$\\
+  Example 2. Given that $sin(x)=\frac{-2}{7} and \frac{-\pi}{2}<x<0$ Find $\cos x$ and $\tan x$\\
+  4. quadrant and $\cos x<0 and tan(x)<0$\\
+  $iedntity sin^2(x)+cos^2(x)=1 subst.$\\
+  $(\frac{-2}{7})^2+cos^2(x)=1$\\
+  $\cos^2(x)=1-\frac{4}{49}$\\
+  $\cos x=\pm\sqrt{\frac{49-4}{49}}$\\
+  $\cos(x)=\pm(\frac{\sqrt{45}}{7})=\frac{\sqrt{5\cdot9}}{7}=\frac{3\cdot\sqrt{5}}{7}$\\
+  and cosine is positive so $\cos x=\frac{3\cdot\sqrt{5}}{7}$\\
+  and $\tan x=\frac{\sin x}{\cos x}=\frac{-2}{7}\cdot(\frac{7}{3\sqrt{5}})$\\
+  $=\frac{-2}{3\cdot\sqrt{5}}=\frac{-2\cdot\sqrt{5}}{15}$\\
+  Example 3. Prove that\\
+  $1+\tan^2(x)=sec^2(x)$\\
+  identity $sin^2(x)+\cos^2(x)=1$\\
+  $\frac{sin^2(x)}{sin^2(x)}+(\frac{\cos^2(x)}{\sin^2(x)})=\frac{1}{sin^2(x)}$\\
+  $1 + \cot^2(x)=cosec^2(x)$\\
+  ... not the correct one identity (we have proved something, but not what we needed to prove)\\
+  identity $identity sin^2(x)+\cos^2(x)=1$\\
+  $\frac{\sin^2(x)}{\cos^2(x)}+\frac{\cos^2(x)}{\cos^2(x)}=\frac{1}{\cos^2(x)}$\\
+  $\tan^2(x)+1=\sec^2(x)$\\
+  excercises p403 ex 6K: 1,2,3,4 a only\\
+  1. Simplify $\sqrt{1-s^2}=\sqrt{1-sin^2(x)}=?$\\
+  use identity that is true for all x\\
+  $sin^2(x)+cos^2(x)=1$\\
+  $\cos^2(x)=1-sin^2(x)$\\
+  2. a. $x^2-a^2=(a\cdot\sin\theta)^2$\\
+  $a^2\cdot\sin^2(x)-a^2$\\
+  $a^2\cdot(\sin^2(x)-1)=?$\\
+  $-a^2(1-\sin^2(x))=-a^2\cdot\cos^2(x)$\\
+  3. a. solve for all $0<x<2\pi$\\
+  a) $3-3\cdot\cos(x)=2\cdot\sin^2(x)$\\
+  $3-3\cdot\cos=2\cdot(1-\cos^2)$\\
+  $3-3\cdot\cos(x)-2+2\cdot\cos^2(x)=0$\\
+  $2\cdot\cos^2(x)-3\cdot\cos(x)+1=0$\\
+  quadratic euqation $a=2,b=-3,c=1$\\
+  $\cos(x)=\frac{-(-3)\pm\sqrt{(-3)^2-4\cdot2\cdot1}}{2\cdot2}=\frac{3\pm1}{4}$\\
+  $\cos(x)=1 or \cos(x)=\frac{1}{2}$\\
+  $x=\begin{cases}
+    0\\2\pi
+  \end{cases}$\\
+  $x=\pm\frac{\pi}{3}+n\cdot2\pi$\\
+  and $0<x<2\pi$ for $x=\frac{-\pi}{3}+1\cdot2\pi=\frac{5\pi}{3}$\\
+  Ans $x=0,x=\frac{5\pi}{3},x=2\pi$\\
+
+   
+\end{document}

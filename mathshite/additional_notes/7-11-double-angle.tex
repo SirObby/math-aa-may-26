@@ -1,0 +1,45 @@
+\documentclass{article}
+\title{\LaTeX Math notes}
+\author{Samuel Hautamäki}
+\date{7th of October 2024}
+\usepackage{mathtools,amssymb,amsthm,gensymb,textcomp}
+\begin{document}
+  \maketitle
+   
+  \section{Double angle identities}
+  hl p405\\
+  identity is true for all angles.\\
+  $\sin(2\alpha)=2\cdot\sin(\alpha)\cdot\cos(\alpha)$\\
+  $\cos(2\alpha)=1-2\cdot\sin^(\alpha)$\\
+  $=2\cdot^2(\alpha)-1$\\
+  $=\cos^2(\alpha)-\sin^2(\alpha)$\\
+  see formulabooklet.\\
+  Example. If $\sin(\alpha)=\frac{2}{7}$ and $\frac{\pi}{2}<\alpha<\pi$\\
+  a) Find $\sin(2\alpha)$\\
+  Lets find $\cos(\alpha)$.\\
+  $\sin^2(\alpha)+\cos^2(\alpha)=1$\\
+  $\cos(\alpha)=\pm\sqrt{1-\sin^2(\alpha)}$\\
+  cos is negative in 2nd quadrant.\\
+  $\cos(\alpha)=-\sqrt{1-(\frac{2}{7})^2}=-\sqrt{1-\frac{4}{49}}=-\sqrt{\frac{49-4}{49}}$\\
+  $\sqrt{\frac{45}{49}}=\frac{-\sqrt{9\cdot5}}{7}=\frac{-3\sqrt{5}}{7}$\\
+  Now, $\sin(2\alpha)=2\cdot\sin(\alpha)\cdot\cos(\alpha)$ subst.\\
+  $2\cdot(\frac{2}{7})\cdot(\frac{-3\sqrt{5}}{7})=\frac{-12\sqrt{5}}{49}$\\
+  Ans $\sin(2\alpha)=\frac{-12\sqrt{5}}{49}$\\
+  $\cos(2\alpha)=1-2\cdot\sin^2(\alpha)$ subst\\
+  $1-2\cdot(\frac{2}{7})^2=1-2\cdot\frac{4}{49}$\\
+  $=\frac{49-8}{49}=\frac{41}{49}$\\
+  c) Find $\tan(2\alpha).$\\
+  $\tan(2\alpha)=\frac{\sin(2\alpha)}{\cos(2\alpha)}$\\
+  $=\frac{\frac{-12\sqrt{5}}{49}}{\frac{41}{49}}=\frac{-12\sqrt{5}}{49}\cdot(\frac{49}{41})$\\
+  $\frac{-12\sqrt{5}}{41}$
+  \subsection{HL p 408:ex1...}
+  1. a. $\tan(\alpha)+\cot(\alpha)=2\cdot\csc(2\alpha)$\\
+  $2\cdot\csc(2\alpha)=2\cdot\frac{1}{2\cdot\sin(\alpha)\cdot\cos(\alpha)}$\\
+  $\tan(\alpha)+\frac{1}{\tan(\alpha)}$\\
+  $\frac{\sin\alpha}{\cos\alpha}+\frac{1}{\frac{\sin\alpha}{\cos\alpha}}=2\cdot\frac{1}{2\cdot\sin(\alpha)\cdot\cos(\alpha)}$\\
+  $\frac{2}{\frac{\sin\alpha}{\cos\alpha}}=2\cdot\frac{1}{2\sin\alpha\cos\alpha}$\\
+  $\frac{2}{\frac{\sin\alpha}{\cos\alpha}}\cdot\frac{1}{2}=\frac{1}{2\sin\alpha\cos\alpha}$\\
+
+   
+   
+\end{document}
