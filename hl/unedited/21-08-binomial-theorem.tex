@@ -1,0 +1,46 @@
+\subsection{Binomial theore}
+HL p 51 
+
+$(a+b)^n=nCr(n, r)\cdot a^n\cdot b^0+nCr(n,1)\cdot a^{n-1}\cdot b^1+nCr(n,2)\cdot a^{n-2}\cdot b^2...nCr(n,n)\cdot a^0\cdot b^n$
+$=\sum_{r=0}^{n}(nCr(n,r)\cdot a^{n-r}\cdot b^r)$
+
+Combination from calculator, Pascal's triangle of $nCr(n,r)=\frac{n!}{r!(n-r)!}$
+
+Example. Simplify.
+$(2x-3)^5=\sum_{r=0}^{5}(nCr(5,r)(2x)^{5-r}\cdot (-3)^r)$
+= $1\cdot(2x)^5\cdot(-3)^0+5\cdot(2x)^4\cdot(-3)^1+10\cdot(2x)^3)-3)^2+10\cdot(2x^2)(-3)^3+5(2x)^1\cdot(-3)^4+1\cdot(2x)^0\cdot(-3)^5$
+= $32x^5-240x^4+720x^3-1080x^2+810x-243$
+or with calculator $\sum_{r=0}^{5}(nCr(5,r)(2x)^{5-r}\cdot (-3)^r)=$
+
+HL p 61 ex 1-9
+1. 
+a) $(1-\frac{x}{3})^{11}=1\cdot(1)^11\cdot(-\frac{x}{3})^0 
++11\cdot(1)^10\cdot(-\frac{x}{3})^1
++55\cdot(1)^9\cdot(-\frac{x}{3})^2
++165\cdot(1)^8\cdot(-\frac{x}{3})^3$
+$1-\frac{x}{3}+\frac{11!}{2!(11-2)!}\cdot\frac{x^2}{9}-\frac{11!}{3!(11-3)!}\cdot(\frac{x^3}{27})$
+
+b) $(1+\frac{x}{2})^7=1\cdot(1)^7\cdot(\frac{x}{2})^0
++7\cdot(1)^6\cdot(\frac{x}{2})^1
++21\cdot(1)^5\cdot(\frac{x}{2})^2
++35\cdot(1)^4\cdot(\frac{x}{2})^3$
+= $1+7\frac{x}{2}+21\frac{x^2}{4}+35\frac{x^3}{8}$
+
+c) $(x+\frac{2}{x})^8=1x^8
++8x^7\cdot\frac{2}{x}^1
++28x^6\cdot\frac{2}{x}^2
++56x^5\cdot\frac{2}{x}^3$
+=$1x^8+8x^7$
+
+2. 
+a) $5th term of (a-2b)^{10}=210\cdot a^5\cdot 2b^5$
+b) $3rd term of (a+\frac{4}{a^2})^{11}=55\cdot a^9\cdot\frac{4}{a^2}^2$
+c) $4th term of (x-\frac{2y}{x})^8=56\cdot x^5\cdot\frac{-2y}{x}^3$
+
+3. Find term indep.
+$(x-\frac{2}{x^2}^{12}=...+nCr(12,r)\cdot x^{12-r}(\frac{-2}{x^2})^r)$
+so that x cancells off that is 
+$\frac{x^{12-r}}{x^{2\cdot r}}=x^0$
+$12-r-2r=0$
+$12=3r$
+$r=4$
