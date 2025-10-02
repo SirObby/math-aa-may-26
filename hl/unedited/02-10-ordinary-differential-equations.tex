@@ -1,0 +1,47 @@
+\subsection{Ordinary differential equations}
+HL p 541
+
+For $\frac{dy}{dx}=\frac{f(x)}{g(y)} | separate x to right, y to left$$g(y)\cdot dy = f(x)\cdot dx$ (integrate both sides)
+$\int g(y) dy=\int f(x) dx$
+$G(y)+c = F(x) + c_2$
+so $G(y)=F(x)+C$
+Homogeneous differential equation has form $\frac{dy}{dx}=f(\frac{x}{y})$
+and to solve it, use substitution $v=\frac{y}{x}$.
+
+Example.
+Solve the differential equation
+$\frac{dy}{dx}=\frac{x^2-y^2}{x\cdot y}$ separate
+$x\cdot dy=(x^2-y^2)dx$
+substitution $v=\frac{y}{x},y=x\cdot v, y'=1\cdot v+x\cdot v'$
+$x\cdot (x\cdot v)dy=(x^2-(xv)^2)\cdot dx$
+$x^2\cdot v(1\cdot v+x\cdot v')=(x^2-x^2v^2)dx$
+$x^2v^2+x^3\cdot v\cdot (\frac{dv}{dx})=(x^2-x^2v^2)dx$
+$x^3\cdot v\cdot dv=(x^2-2\cdot x^2v^2)dx$ 
+$v\cdot dv=(\frac{1}{x}-\frac{2v^2}{x})$
+$\frac{v}{1-2v^2}dv=\frac{1}{x}dx$
+$\int \frac{-4v\cdot(\frac{1}{-4})}{(1-2v^2)}dv=\int\frac{1}{x}dx$
+$\frac{1}{-4}ln(1-2v^2)=ln x+c$
+$ln(1-2v^2)^{-1/4}=ln(x\cdot c_2)$
+$(1-2v^2)^{-1/4}=x\cdot c$
+$\frac{1}{1-2v^2}=x^4\cdot c_3$
+substitute back $v=\frac{y}{x}$
+$\frac{1}{1-2\cdot (\frac{y^2}{x^2})}=x^4\cdot c$
+$1=x^4\cdot c-2\cdot y^2x^2\cdot c$
+$\frac{1}{c}=x^4-2y^2x^2$
+Ans: Consant$=x^4-2y^2x^2$
+If $y$-value at some point is given, then it's called initial value problem (IVP).
+and you can solve c.
+
+page 543 ex. 8G,8H 1a)
+1a) $x\cdot y'=x^2cos(x)+y$
+substitute $v=\frac{y}{x}$, $y=x\cdot v$
+and $y'=dy=1\cdot v+x\cdot v'=v+xdv$
+Now $x\cdot y'=x^2cos(x)+y$
+$x\cdot (v+x dv)=x^2cos(x)+xv$
+$xv-xv+x^2dv=x^2cos(x)$
+$x^2dv=x^2cos(x)$
+$1\cdot dv=cos(x)$
+$\int 1 dv=\int cos(x) dx$
+$v=sin(x)+c$ and substitue back
+Ans: $y=x\cdot sin+x\cdot c$ where c is a constant of integration.
+
