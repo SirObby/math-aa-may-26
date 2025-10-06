@@ -1,2 +1,6 @@
 higher_level.*
 standard_level.*
+*.out
+*.log
+*.pdf
+*.aux
