@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Limits revisited}
+HL p 550
+\obeylines
+
+L'Hopital's rule.
+
+If $\lim_{x\to a}(\frac{f(x)}{g(x)})=\frac{f(a)}{g(a)}=\frac{0}{0}$ and $\frac{f'(a)}{g'(a)}$ exists 
+then $\lim_{x\to a}(\frac{f(x)}{g(x)})=\lim_{x\to a}(\frac{f'(a)}{g'(a)})$.
+
+Example Find $\lim_{x\to\infty}(x^2\cdot e^{-x})$
+$\lim_{x\to\infty}(\frac{x^2}{e^x})=\frac{\infty^2}{e^{\infty}}=\frac{\infty}{\infty}$ let's use L'Hopital's rule.
+$\lim_{x\to\infty}(\frac{x^2}{e^x})=\lim_{x\to\infty}(\frac{2x}{e^x})=\frac{2\cdot\infty}{\infty}$
+(indeterminate) let's use L'Hopitals rule.
+$\lim_{x\to\infty(\frac{2x}{e^x})}=\lim_{x\to \infty}(\frac{2}{e^{\infty}})=\frac{2}{\infty}=0$
+Note $\frac{0}{0},\frac{\pm\infty}{\pm\infty}$ are indeterminate!
+but 0 or any real number or $\infty$ could be a value of limit.
+b) $\lim_{x\to 0}(\frac{sin(2x)}{sin(x)})=\frac{sin(2\cdot0}{sin(0)}=\frac{0}{0}$
+L'hopital's rule
+$\lim_{x\to0}(\frac{sin(2x)}{sin(x)})=\lim_{x\to0}(\frac{2cos(2x)}{cos(x)})=\frac{2\cos(x)}{cos(x)}=\frac{2\cdot 1}{1}=2$
+c) $\lim_{x\to0}=((1-cos(x))\cdot ln(x))$
+$=\lim_{x\to0}(\frac{ln(x)}{(\frac{1}{1-cos(x)})})=\frac{ln(0)}{\frac{1}{1-cos(0)}}=\frac{-\infty}{\frac{1}{0}}=\frac{-\infty}{\infty}$
+Use L'Hopitals rule.
+=$\lim_{x\to0}(\frac{1/x}{(-1\cdot(1-cos(x))^{-2}\cdot sin(x))})$
+$=\frac{1/0}{-(1-1)^{-2}\cdot0}$
+Use l'hopital's rule.
+$\lim_{x\to0}(\frac{1}{-x}\cdot\frac{(1-cos(x))^2}{sin(x)})=...=\frac{0}{0}$
+L'Hopitals rule.
+$=\lim_{x\to0}(-\frac{2\cdot(1-cos(x))^1\cdot sin(x)}{1\cdot sin(x)+x\cdot cos(x)})=...=\frac{0}{0}$
+L'Hopitals rule
+$=\lim_{x\to0}(\frac{-2\cdot (sin(x)\cdot sin(x)+(1-cos(x))cos(x))}{cos(x)+1cos(x)+x\cdot (-sin(x)})$
+$=\lim_{x\to0}(\frac{-2(sin^2x-cos^2x+1)}{2\cdot cos(x)-x\cdot sin(x)})=\frac{-2\cos(2\cdot0)+2}{2\cdot cos(0)-0\cdot sin(0)}=\frac{-(2\cdot1-2)}{2\cdot1-0}=\frac{0}{2}=0$
+
+p 553 ex 8J all.
+1a. $\lim_{x\to0}(\frac{sin(x)}{x})=\frac{sin(0)}{0}=$
+lhopitals rule $\lim_{x\to0}(\frac{cos(x)}{1})=\frac{1}{1}=1$
+b. $\lim_{x\to0}(\frac{tan(3x)}{tan(4x)})=\frac{0}{0}$
+lhopitals $\lim_{x\to0}(\frac{sec^2(3x)}{sec^2(4x)})=\frac{3\cdot 1}{4\cdot 1}=\frac{3}{4}$
+c. $\lim_{x\to0}(\frac{1-cos x}{x})=\frac{1-1}{0}=\frac{0}{0}$
+lhopitals $\lim_{x\to0}(\frac{sin(x)}{1})=\frac{0}{1}=0$
+d. $\lim_{x\to3}(\frac{e^{x^2}-e^9}{x-3})=\frac{}{0}$
+Lhopitals rule
+$\lim_{x\to3}(\frac{e^{x^2}-e^9}{1})$ it is what it is.
+e. $\lim_{x\to e}(\frac{1-ln x}{\frac{x}{e}-1})=\frac{1-ln e}{-1}=\frac{0}{0}$
+$\lim_{x\to e}(\frac{-\frac{1}{x}}{})$
+
+\end{document}

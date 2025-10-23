@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{The integrating factor}
+HL p 544
+\obeylines
+Is a method of solvind differential equation is case 
+$\frac{dy}{dx}+P(x)\cdot y=Q(x)$
+where $y=y(x)$ is a function of x
+multiply by $I(X)=e^{\int P(x)dx}$
+since $I'(x)=I(x)\cdot P(x)$
+gives
+$f(x)\cdot \frac{dy}{dx}+I(x) P(x)\cdot y=I(x) \cdot Q(x)$ 
+$\int (I(x)\cdot\frac{dy}{dx}+I'(x)\cdot y)d=\int (I(x)\cdot Q(x)) d$
+product rule of differentiation.
+$\int D(I\cdot y) d= \int (I(x)\cdot Q(x)) d$
+so $I\cdot y=\int (I(x) \cdot Q(x)) dx$
+Example find the general solution to
+$\frac{dy}{dx}-\frac{2}{x}\cdot y=x^3$
+so $P(x)=-\frac{2}{x} Q=(x)=x^3$
+integrating factor $I(x)=e^{\int(-2/x dx)}=e^{-2\cdot ln(x)}=e^{ln(x^{-2}}=x^{-2}$
+$\frac{dy}{dx}-\frac{2}{x}\cdot y=x^3$
+$\frac{d}{dx}(y\cdot x^{-2})-\frac{2}{x}\cdot y\cdot x^{-2}=x^3\cdot x^{-2}$
+$(d(y\cdot x^{-2}-\frac{2}{x}\cdot y\cdot x^{-2}dx=x^3\cdot x^{-2}dx)$
+$\int(dy x^{-2}-\frac{2}{x}\cdot y\cdot x^{-2})dx=\int x dx$
+product ruel fo diff
+$I(x)\cdot P(x)=\frac{1}{2}x^2+c$
+$y\cdot x^{-2}=\frac{1}{2}x^2+c$
+$y=\frac{1}{2}x^4+c\cdot x^2$
+Ans: $y=\frac{1}{2}x^4+c\cdot x^2$ where c is constant of integration
+
+ex 1., p 545
+1a) $y'+y=e^x$
+$\frac{dy}{dx}+1\cdot y=e^x$ integationg factor method
+$p(x)=1$ and $Q(x)=e^x$ so $I(x)=e^{\int 1dx}=e^x$
+$\frac{dy}{dx}+1\cdot y=e^x$
+$\frac{dy}{dx}\cdot e^x+e^x1\cdot y=e^x\cdot e^x$
+$\int(dy\cdot e^x+e^x\cdot y)dx=\int e^{2x} dx$
+$\int D(y\cdot e^x)dx = e^{2x}\cdot(\frac{1}{2})+C$
+$y\cdot e^x=e^{2x}\cdot (\frac{1}{2})+C$
+$y=\frac{e^{2x}\cdot(\frac{1}{2})+C}{e^x}$
+$y=\frac{1}{2}e^x+c\cdot e^{-x}$
+1b) $(x-1)\cdot y'=y-x^2\cdot y$
+$(x-1)\cdot y'=y\cdot(1-x^2)$
+$y'=y\cdot \frac{1-x^2}{x-1}$
+$y'=y\cdot \frac{(1-x)(1+x)}{-(-x+1)}$(cancel)
+$y'=y\cdot (-(1+x)$
+$y'+(1+x)\cdot y=0$
+$P(x)=1+x$ and $Q(x)=0$
+integrating factor $I(x)e^{\int(1+x)dx}=e^{x+1/2\cdot x^2}$
+...
+$I(x)\cdot y=\int (0\cdot e^{x+ 1/2\cdot x^2}dx$
+$I(x\cdot y=\int 0dx$
+$I(x)\cdot y=c$
+$Ans: y=\frac{c}{e^{x+1/2\cdot x^2}}$
+1c) $x\cdot y'+y=x^2+1$
+$y'+\frac{1}{x}\cdot y=x\frac{1}{x}$
+$p(x)=\frac{1}{x}$ so integrating factor $I(x)=e^{\int 1/x dx}=e^{ln(x)=x}$
+im already lost.
+
+
+
+\end{document}

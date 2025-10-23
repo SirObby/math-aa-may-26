@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Numerical differentiation}
+HL p 546
+\obeylines
+Involves the derivatives of function f with respect to x.
+
+1st order means $\frac{d}{dx}(y)=y'(x)=f'(x)$
+
+Differential equation like
+$f(x,y)\cdot \frac{d}{dx}(y)+g(x,y)=0$, where $y=y(x)$.
+solve it for y.
+$\frac{d}{dx}(y)=\frac{-g(x,y)}{f(x,y)}$ is slope of tangent
+$y=\int \frac{-g(x,y)}{f(x,y)}dx$
+general solution with constant of integration c.
+The set of tangents at all points (x,y)
+is called the slope field of differential equation.
+
+An isocline is set of all points on slope field at which the tangents have the same gradient.
+
+Euler's method:
+start at point ($x_0$,$y_0$)
+with step size $h=0.1$ or $0.001$ ... or 0.5
+$x_{n+1}=x_n+h$ and $y_{n+1}=y_n+f(x_n,y_n)$
+where $f(x_n,y_n)=\frac{d}{dx}(y)$
+gives approximate solution to initial value problem. (IVP)
+
+Example. Find value of y at $x=5$ given that 
+$\frac{d}{dx}(y)=\sqrt{x\cdot y+1}$ and curve passes point $(4.5;1)$.
+Euler's method $h=0.1$ 
+$x_0=4.5$
+
+$x_{n+1}=x_n+h$
+$x_1 =4.5+0.1 =4.6 $
+$y_1=1+0.1\cdot\sqrt{4.5\cdot 1+1}$
+$x_2 =4.6+0.1 =4.7 $
+$y_2=ans+0.1\cdot\sqrt{4.6\cdot ans+1}=1.492$
+$x_3 =4.7+0.1 =4.8 $
+$y_3=1.776$
+$x_4 =4.8+0.1 =4.9 $
+$y_4=2.084$
+$x_5 =4.9+0.1 =5$
+$y_5=2.419$
+$y=_{n+1}=y_n+h\cdot f(x_n,y_n)=y_{n+1}=y_n+0.1\cdot\sqrt{x\cdot y+1}$
+Ans: $y\approx2.42$
+p 549.
+ex 1. Euler's method see formula booklet (5.18).
+1. $y_{n+1}=y_n+h\cdot f(x_n,y_n) and x_{n+1}=x_n+h$
+$h=0.1$ $y(0)=1$ so $x_0,y_0=1$
+$y_{n+1}=y_n+h\cdot y'$
+where $y'=2-e^{-4x}-2y$
+$y_{n+1}=x_n+h\cdot (2-e^{-4x_0}-2)=ans+0.1\cdot(2-e^{-4\cdot 0}-2\cdot ans)=0.9$
+$x_1=x_0+0.1=0+0.1$
+$x_2=0.1+0.1=0.2$
+$y_2=x_n+h\cdot (2-e^{-4x_0}-2)=ans+0.1\cdot(2-e^{-4\cdot 0.1}-2\cdot ans)=0.8529$
+$x_3=0.2+0.1=0.3$
+$y_3=0.837$
+$x_4=0.3+0.1=0.4$
+$y_4=0.839$
+$x_5=0.4+0.1=0.5$
+$y_5=0.851$
+2. $h=0.4$
+$y'=2xy$
+$y(1)=2$, at $x=3$
+$x_1=0+0.4=0.4$
+$y_1=2+0.4\cdot(2\cdot 0\cdot 2)=2$
+$x_2=0.4+0.4=0.8$
+$y_2=2+0.4\cdot(2\cdot 0.4\cdot 2)=2.64$
+$x_3=0.8+0.4=1.2$
+$y_3=2.64+0.4\cdot(2\cdot 0.8\cdot 2.64)=4.46$
+Ans: 4.46
+3. 
+$h=0.1$
+$y'=x^2+y^2$
+$x_1=0+0.1=0.1$
+$y_1=1+0.1\cdot (0^2+1^2)=1.1$
+$x_2=0.1+0.1=0.2$
+$y_2=1.1+0.1\cdot(0.1^2+1.1^2)=1.222$
+$x_3=0.2+0.1=0.3$
+$y_3=1.222+0.1\cdot(0.2^2+1.222^2)=1.3753$
+$x_4=0.3+0.1=0.4$
+$y_4=1.3753+0.1\cdot (0.3^2+1.3753^2)=1.573$
+$y=\approx=1.573$
+
+
+\end{document}

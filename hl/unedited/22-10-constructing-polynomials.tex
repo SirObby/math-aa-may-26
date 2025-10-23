@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Constructing polynomials, Maclaurin and Taylor polynomial.}
+HL p 554
+\obeylines
+
+Taylor series is expansion of $f(x)$ about point
+$x=a$ 
+$f(x)=f(a)+\frac{f'(a)}{1!}\cdot x^1+\frac{f''(a)}{2!}\cdot x^2+...+\frac{f^{(n)}(a)}{n!}\cdot x^n$
+When point $x=0$ it's called Maclaurin series expansion of $f(x)$. (See formula booklet)
+Lagrange form of error term $=remainder$
+$R_n(x:a)=\frac{f^{(n+1)}(c)\cdot(x-a)^{n+1}}{(n+1)!}$
+where $x\leq c\leq a$.
+Example
+Find 4th degree (=order) Maclaurin series of 
+a) $sin(x)$
+$f(0)=sin(0)=0$
+$f'(x)=D sin(x)=cos(x)$ and $f'(0)=cos(0)=1$
+$f''(x)=D cos(x)=-sin(x),f''(0)=-sin(0)=0$
+$f'''(x)=D-sin(x)=-cos(x),f'''(0)=-cos(0)=-1$
+$f^{(4)}(x)=D-cos(x)=-(-sin(x))=sin(x),f^{(4)}(0)=sin(0)=0$
+so up to 4th degree there is $sin(x)\approx f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x^2+\frac{f'''(0)}{3!}x^3+\frac{f^{(4)}(0)}{4!}x^4$
+$=0+\frac{1}{1}x+\frac{0}{2}x^2+\frac{-1}{1\cdot 2\cdot 3}x^3+\frac{0}{6\cdot 4}x^4$
+$=x-\frac{1}{6}x^3$
+Graph the $sin(x)$ and the Maclaurin polynomial at $x=0$
+p 556 ex 1,2
+1. 
+a) $f(x)=xe^x$
+$f(0)=0\cdot e^0=0$
+$f'(x)=1\cdot e^x+x\cdot e^x$ product rule
+$f'(0)=1\cdot e^0+0\cdo te^0=1\cdot 1+0=1$
+$f''(x)=D(e^x+x\cdot e^x)=e^x+1\cdot e^x+x\cdot e^x$
+$f''(0)=e^0+e^0+0\cdot e^0=1+1=2$
+$f'''(x)=D(2e^x+x\cdot e^x)=2\cdot e^x+(1\cdot e^x+x\cdot e^x)$
+$f'''(0)=3\cdot e^0+0\cdot e^0=3\cdot 1+0=3$
+$f^{(4)}(x)=D(3e^x+x\cdot e^x)=3e^x+1\cdot e^x+x\cdot e^x$
+$f''''(0)=4\cdot1=4$
+4th order Maclaurin polynomial is
+$f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x^2+\frac{f'''(0)}{3!}x^3+\frac{f^{(4)(0)}}{4!}x^4$
+$=0+\frac{1}{1}x+\frac{2}{2}x^2+\frac{3}{6}x^3+\frac{4}{24}x^4$
+$=x+x^2+\frac{1}{2}x^3+\frac{1}{6}x^4$.
+
+Binomial series is Maclaurin expansion for $f(x)=(1+x)^p$
+$=1+px+\frac{p(p-1)}{2!}x^2+\frac{p(p-1)(p-2)}{3!}x^3+...$
+Example
+Use the binomial series to find Maclaurin series of 
+$a) f(x)=\frac{1}{(1+x)^2}$
+$=(1+x)^{-2}$ where $p=-2$
+$=1+px+\frac{p(p-1)}{2!}x^2+\frac{p(p-1)(p-2)}{3!}x^3+...$ subst.
+$=1-2x-\frac{2(-2-1)}{2}x^2-\frac{2(-2-1)(-2-2)}{6}x^3+...$
+$=1-2x+3x^2-4x^3+...$
+Has form of $\sum_{n=0}^{\infty}((-1)^n\cdot (n+1)\cdot x^n)$.
+p 562 ex 5a
+5a) $f(x)=\sqrt{1-x}=(1-x)^{1/2}=(1+(-x))^{1/2}$
+binomial series see formula booklet, $p=1/2$.
+$=1+px+\frac{p(p-1)}{2!}x^2+\frac{p(p-1)(p-2)}{3!}x^3+...$subst
+$=1+\frac{1}{2}(-2)+\frac{-1/2\cdot(-1/2-1)}{2}x^2+\frac{-1/2\cdot(-3/2)\cdot(-1/2-2)}{6}x^3+\frac{-1/2(-3/2)\cdot(-5/2)\cdot(-1/2-3)}{24}x^4+...$
+$=1-\frac{1}{2}x+\frac{1}{8}x^2+\frac{1}{16}x^3+\frac{5}{128}x^4+...$
+
+
+
+1a
+
+
+
+\end{document}
