@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Scalar product}
+p 597
+\obeylines
+= also dot product=inner product.
+$a\cdot b=|a|\cdot |b|cos(\alpha)$ is a numerical value.
+Where $\alpha$ is angle between vectors a and b.
+$cos(\alpha)=\frac{a\cdot b}{|a||b|}$
+for perpendicular vectors $a\cdot b=0$
+
+Example.
+a) Find the scalar product of $a=i-2j+4k$ and $b=-21i+6j+7k$
+$a\cdot b=1\cdot (-21)+(-2)6+4\cdot7=-21-12+28=-5$
+obtuce angle ($>90\degree$ since negative value)
+b) Find the angle.
+$cos(\alpha)=\frac{a\cdot b}{|a||b|}$
+$nSolve(cos(x)=\frac{-5}{\sqrt{1^2+(-2)^2+4^2}\cdot \sqrt{(-21)^2+6^2+7^2}},x)$
+$\alpha=92.7\degree (3.sf)$
+properties:
+1) $a\cdot b=0$ for perpendicular $a\perp b$
+2) $a\cdot b=|a|\cdot |b|$ for parallel $a||b$
+(or $a=t\cdot b$ for $a||b$)
+3) $a\cdot a=a^2$ same vector, coincident.
+4) $a\cdot b>0$ then $\alpha<90$ acute
+ $a\cdot b<0$ then $\alpha>90$ obtuse.
+5) $a\cdot b=b\cdot a$
+6) $u\cdot (a+b)=u\cdot a+u\cdot b$
+
+
+p 604 ex 1-8
+1a) paper 1 $|a|=\sqrt{3}, |b|=4, angle=30\degree$
+$a\cdot b=?=|a|\cdot |b|cos(30)$
+$\sqrt{3}\cdot 4\cdot cos(30\degree)=\sqrt{3}\cdot4\cdot\frac{\sqrt{3}}{2}=2\cdot(\sqrt{3})^2=2\cdot 3=6$
+1b) paper 2: $a\cdot b=12\cdot 8\cdot cos(115)=-40.571$
+$\approx=-40.6$
+1c) $a\cdot b=3\cdot 5\cdot cos(\frac{\pi}{7}^r)=13.5145$
+d) $a\cdot b=5\cdot\sqrt{2}\cdot 17\cdot cos(3\pi/4)=-85$
+paper1:$\frac{3\cdot\pi}{4}=(180\degree-45\degree)$
+$cos(\frac{3\pi}{4})=\frac{-1}{\sqrt{2}}$ frmo unit circle and memory triangle.
+2a. $a=3i-4j$ and $b=6i+5j$
+$a\cdot b=3\cdot 6+(-4)\cdot 5=18-20=-2$
+b) $nSolve(cos(x)=\frac{-2}{\sqrt{3^2+4^2}\cdot\sqrt{6^2+5^2}},x)$
+$92.935$
+OR $cos^-1(\frac{-2}{\sqrt{3^2+4^2}\cdot\sqrt{6^2+5^2}})=92.935$
+3. 
+a) $a\cdot b$
+$1\cdot-2+4\cdot3+-31\cdot1=7$
+$cos^{-1}=\frac{7}{\sqrt{1^2+4^2+3^2}\cdot\sqrt{2^2+3^2+1^2}}=68.475$
+4) $(a-2b)\cdot(2a+b)=0$
+$4a^2+a\cdot b-4b\cdot a-2b^2=0$
+$2\cdot 2\cdot 2+a\cdot b-4a\cdot b-2\cdot\sqrt{3}\sqrt{3}=0$
+$8-3\cdot a\cdot b-2\cdot 3=0$
+$-3a\cdot b=-2$
+$a\cdot b=\frac{2}{3}$ since $a\cdot a=a^2=|a||a|$
+
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Maclaurin series + differential equations revision}
+HL p 563
+\obeylines
+A) Ordinary Differential Equation $\frac{dy}{dx}=f(x,y)$
+1) Separate $x$ to the other side and $y$ to the other
+2) Integrate both sides.
+B) homogenious diff. eq $\frac{d}{dx}(y)=f(\frac{y}{x})$
+so substitute $u=\frac{y}{x}$
+C) diff eq.  looks like 
+$\frac{d}{dx}(y (x)\cdot u(x))=v(x)$
+or $\frac{d}{dx}(y)+P(x)\cdot y=Q(x) ||\cdot I=e^{\int P(x)dx}$
+D) numerically Euler's method
+$\frac{d}{dx}(y)=f(x,y)$ select a point $(x_0,y_0)$
+use formulas: $x_n=x_{n-1}+h,h=0.1,or 0.001$
+$y_n=y_{n-1}+h\cdot f(x_{n-1},y_{n-1})$ repeat 4-8 times
+plot the points and connect with a smooth curve.
+p 565 ex 4,a,g, 6,7,8
+4a) Find solution to
+$\frac{xy}{x+1}=\frac{dy}{dx}$ separate x and y. $||:y and \cdot dx$
+$\frac{x}{x+1}\cdot dx=\frac{1}{y}\cdot dy$ let's integrate both sides.
+$\int \frac{x}{x+1}dx=\int \frac{1}{y}dy$
+$\int (\frac{x+1}{x+1}-\frac{1}{x+1})dx=ln(y)+c$
+$\int (1-\frac{1}{x+1})dx=ln(y)+c$
+$x-ln(x+1)=ln(y)+c$ solve for y
+$ln(y)=x-ln(x+1)-c$
+$y=e^{x-ln(x+1)-c}$
+or $y=\frac{e^x}{e^{ln(x+1)}\cdot C}=\frac{e^x}{x+1}\cdot A$
+Constants C and A from real numbers.
+Ans: $y=\frac{e^x}{x+1}\cdot A$
+4g) $\frac{dy}{dx}-\frac{1}{2}\cdot y=\frac{1}{2}\cdot e^{1/2x}$
+is homogenious diff eq with integrating factor $I=e^{\int (-\frac{1}{2})dx}=e^{-1/2x}$
+$e^{-x/2}\cdot\frac{dy}{dx}-\frac{1}{2}\cdot y\cdot e^{-x/2}=\frac{1}{2}\cdot e^{1/2\cdot x}\cdot e^{-x/2}=\frac{1}{2}$
+so product rule of diff gives
+$\frac{dy}{dx}\cdot y\cdot e^{-x/2}=\frac{1}{2}$ (integrate)
+$\int(\frac{dy}{dx} y\cdot e^{-x/2})d=\int\frac{1}{2}d$
+$y\cdot e^{-x/2}=\frac{1}{2}x+c$ solve for y
+$y=\frac{\frac{1}{2}x+c}{e^{-x/2}}$
+Ans: $y=\frac{1}{2}\cdot(x+C)\cdot e^{x/2}$
+L'Hoputals rule for limits 
+if $lim_{x\to a}(\frac{f(x)}{g(x)})=\frac{0}{0}$
+then $=\lim_{x\to a}(\frac{f'(x)}{g'(x)})$
+
+maclaurin series for changing trigonometric or logarithmic functions into polynomials.
+$f(x)=sin(x) or cos(x) or log(x)$
+$\approx f(0)+x\cdot f'(0)+\frac{x^2}{2!}\cdot f''(0)+...$
+
+ex 8.
+Find $\lim_{x\to 0}(\frac{sin(x)-x}{x\cdot sin(x)})=subst.=\frac{sin(0)-0}{0\cdot sin(0)}=\frac{0}{0}$
+L'Hopital's rule
+$\lim_{x\to0}(\frac{cos(x)-1}{1\cdot sin(x)+x\cdot cos(x)})=\frac{1-1}{1\cdot 0+0\cdot 1}=\frac{0}{0}$
+$\lim_{x\to0}(\frac{-sin(x)-0}{cos(x)+1\cdot cos8x)+x\cdot(-sin(x))})$
+$\frac{0-0}{1+1\cdot 1+0\cdot 0}=\frac{0}{2}=0$
+ex7. 5 terms of Maclaurin
+$f(x)=ln(1+sin x)$
+$f(0)=l(1+0)=0$
+$f'(x)=\frac{1}{1+sin(x)}\cdot (0+cos(x))=\frac{cos(x)}{1+sin(x)}$
+$f'(0)=\frac{cos(0)}{1+sin(0)}=\frac{1}{1+0}=1$
+
+
+
+
+\end{document}

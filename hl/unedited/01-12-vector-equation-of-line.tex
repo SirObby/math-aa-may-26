@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Vector equation of linie}
+\obeylines
+p 605
+Line passes points $A=(x_a,x_y,z_a)$ and $B=(x_b,y_b,z_b)$
+direction vector of line is AB or BA.
+line has equation $l=OA+t\cdot AB$
+where $t\in\mathbb{R}$
+l=$\begin{vmatrix}x_a \\ y_a \\ z_a \end{vmatrix}+t\cdot \begin{vmatrix}x_b-x_a\\y_b-y_a\\z_b-z_a\end{vmatrix}$ is vector form
+and parameter form$\begin{cases}x=x_a+t(x_b-x_a)\\y=y_a+t(y_b-y_a)\\z=z_a+t(z_b-z_a)\end{cases}$
+solve all rows for $t=t=t$ and move all terms into middle $=0$ is called cartesian form of equation of line.
+Example may2013/4/paper2
+line 1:$\begin{vmatrix}10\\6\\-1\end{vmatrix}+s\cdot\begin{vmatrix}2\\-5\\-2\end{vmatrix}$ and line 2:$\begin{vmatrix}2\\1\\-3\end{vmatrix}+t\cdot \begin{vmatrix}3\\5\\2\end{vmatrix}$
+intersect at point $A=?$
+substitute $line1=line2$
+$\begin{vmatrix}10\\6\\-1\end{vmatrix}+s\cdot\begin{vmatrix}2\\-5\\-2\end{vmatrix}=\begin{vmatrix}2\\1\\-3\end{vmatrix}+t\cdot \begin{vmatrix}3\\5\\2\end{vmatrix}$
+$\begin{cases}10+2s=2+3t\\6-5s=1+5t\\-1-2s=-3+2t\end{cases}$
+$s=-1,t=2$
+where intersextion point substitute
+$x=10+2(-1)=8$
+$y=6-5\cdot-1=11$
+$z=-1-2(-1)=1$
+Ans: $A=(8,11,1)$
+extra example b) Find cartesian form of line 1.
+vector form line 1=$\begin{vmatrix}10\\6\\-1\end{vmatrix}+s\cdot\begin{vmatrix}2\\-5\\-2\end{vmatrix}$
+parameter form $\begin{cases}x=10+2s\\y=6-5s\\z=-1-2s\end{cases}$
+solve it for s
+$\begin{cases}\frac{x-10}{2}=s\\\frac{y-6}{-5}=s\\\frac{z+1}{-2}=s\end{cases}$
+$\frac{x-10}{2}=\frac{y-6}{-5}=\frac{z+1}{-2}|\cdot10$
+$5x-50=-2y-6\cdot(-2)=-5(z-1)$
+$0=-5x+50-2y+12+5z-5$
+$50x+2y-5z+57=0$ is cartisian form of line
+
+concurrent lines passes the same point. 
+Parallel lines has collinear direction vectors.
+perpendicular, ortogonal, normal lines or direction vectors has scalar product$=0$
+ex p 610,613 1-4
+1. $A(0,0)$ and $B(2,3)$
+$vector equation=OA+t\cdot AB$
+$\begin{vmatrix}0\\0\end{vmatrix}+t\cdot\begin{vmatrix}2-0\\3-0\end{vmatrix}=t\cdot\begin{vmatrix}2\\3\end{vmatrix}=2ti+3tj$
+2a) $direction vector=i+j=\begin{vmatrix}1\\1\end{vmatrix}$
+line=$OP+t\cdot\begin{vmatrix}1\\1\end{vmatrix}=\begin{vmatrix}2\\-7\end{vmatrix}+t\cdot \begin{vmatrix}1\\1\end{vmatrix},t\in\mathbb{R}$
+2b) line ahs normal vector=2i-3j=$\begin{vmatrix}2\\-3\end{vmatrix}$
+take any direction vector $xi+yj$ has scalar product$=0$
+$\begin{vmatrix}2\\-3\end{vmatrix}\cdot \begin{vmatrix}x\cdot y\end{vmatrix}=0$
+$2\cdot3-3\cdot2=0$ so direction can be $\begin{vmatrix}3\\2\end{vmatrix}$
+and line=$OP+\lambda\cdot\begin{vmatrix}3\\2\end{vmatrix},\lambda\in\mathbb{R}$
+$\begin{vmatrix}2\\-7\end{vmatrix}+\my\cdot \begin{vmatrix}3\\2\end{vmatrix}$.
+3) line is parallel to $\frac{x-3}{2}=\frac{y+1}{-3}$
+same direction$=?$ back to vector form
+$\Mu=\frac{x-3}{2}$ and $\my=\frac{y+1}{-3}$
+$2\my+3=x$
+$-3\mu-1=y$
+so $\begin{cases}x=3+2\my\\y=-1-3\my \end{cases}$ is $\begin{vmatrix}3\\-1\end{vmatrix}+\my\begin{vmatrix}2\\-3\end{vmatrix}$
+and parallel line passing $T=(-3,8)$ is $\begin{vmatrix}-3\\8\end{vmatrix}+s\cdot \begin{vmatrix}2\\-3\end{vmatrix}$.
+4a) $r=3i+2j+\lambda(-1+aj)$
+$p=(1+2\my)i+(5\my-2)j=\begin{vmatrix}1\\-2\end{vmatrix}+\my\begin{vmatrix}2\\5\end{vmatrix}$
+parallel if $a=?$
+direction vectors are $(-i+aj)=\begin{vmatrix}-1\\a\end{vmatrix}$ and $\begin{vmatrix}2\\5\end{vmatrix}$
+$\begin{vmatrix}-1\\a\end{vmatrix}$ and $\begin{vmatrix}2\\5\end{vmatrix}$ are parallel if $\begin{vmatrix}-1\\a\end{vmatrix}=t*\begin{vmatrix}2\\5\end{vmatrix}$ 
+    $linSolve(\begin{cases}-1=2\cdot t\\a=t\cdot t\end{cases},a,t)=\frac{-5}{2},\frac{-1}{2}$
+Ans: $a=\frac{-5}{2}$
+613 ex1a) $A=(1,3,-2)$ $B=(4,2,1)$
+line=$\vec{r}=\textbf{}a+t\cdot \textbf{b}=OA+t\cdot AB$
+=... to be or not to be
+
+\end{document}
