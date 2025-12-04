@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Vector product}
+\obeylines
+P 614-620
+$a\times b=\begin{vmatrix}i, j, k \\ a_x a_y a_z \\ b_x b_y b_z\end{vmatrix}$
+$=ia_yb_z+j_azb_x+ka_xb_y-b_xa_yk-b_ya_zi-b_za_xj$
+$=|a||b|sin(\alpha)\cdot n$
+where n is a normal vector to the plane of a and b.
+Properties:
+$a\times b=-(b\times a)$
+$a\times (b\times c)=(a\times b)\times c$
+$a\times (b+c)=a\times b+a\times c$
+where $\times$ is called vector product or cross product.
+Example: 
+a) Find cross product of vectors $a=-i+j+2k$ and $b=2i+j-3k$.
+paper 1:
+$a\times b=\begin{vmatrix}i j k \\ -1 1 2 \\ 2 1 -3\end{vmatrix}$
+$=-3i+j\cdot 2\cdot 2+k\cdot -1\cdot 1-2k-2i-(-3)\cdot -1j$
+$=-5i+1j-3k$
+paper 2: not in test mode :(
+b) Find a unit vector perpendicular to the plane of vectors a and b.
+$a\times b=-5i+j-3k$ is perpendicular
+$|-5i+j-3k|=\sqrt{(-5)^2+1^2+(-3)^2}=\sqrt{25+1+9}=\sqrt{35}$
+unit vector=$\frac{-5i+j-3k}{\sqrt{35}}$.
+Volume of parallelopiped(=suuntaissärmiö)
+$V=(a\times b)\cdot c$
+and
+area of parallelogram
+$A=|a\times b|$
+Excercises p620:1-7
+1a) $a=2i+3k-5k$ and $b=1-2j+3k$
+paper 2: $crossP([2,3,-5],[1,-2,3])$
+$=[-1,-11,-7]$
+paper 1: $a\times b=\begin{vmatrix}i j k \\2 3 -5 \\ 1 -2 3\end{vmatrix}$
+$=6i-5j-4k-3k-(-2)\cdot (-5)\cdot i-3\cdot 2\cdot j$
+$=-i-11j-7k$
+b) $c=i+j$ and $d=3i-2k$
+$c\times d=\begin{vmatrix}i j k \\ 1 1 0 \\ 3 0 -2\end{vmatrix}$
+$=i\cdot 1\cdot(-2)+j\cdot 0+5\cdot 1\cdot 0-3\cdot 1\cdot k-0-(-2)i\cdot j$
+$=-2i-3k+2j$
+c) $m=3i-4j-k$ and $n=2i+j+2k$
+$m\times n=\begin{vmatrix}i j k \\3 -4 1 \\ 2 1 2\end{vmatrix}$
+$-7,-8,11$
+ex 2. 
+area of parallelogram $|a\times b|$
+$a\times b=\begin{vmatrix}i j k\\2 3 -6 \\ 2 3 -4\end{vmatrix}$
+$=-12i+24j+6k-6k+18i+8j$
+$-18i-10j-11k$
+Area:$|-18i-10j-11k|=\sqrt{18^2+10^2+11^2}$
+$\sqrt{324+100+121}=\sqrt{545}$
+3. A=(1,4,2),b=-2,0,3)C=-(1,2,4)
+AB=$\begin{vmatrix}-2-1\\0-4\\3-2\end{vmatrix}=\begin{vmatrix}-3\\-4\\1\end{vmatrix}=-3i-4j+k$
+AC=$\begin{vmatrix}-2\\-2\\2\end{vmatrix}=-2i-2j+2k$
+area of triangle:$\frac{|a||b|sin(\alpha)}{2}=\frac{1}{2}||AX\times AC$
+$AB\times AC=\begin{vmatrix}i j k \\-3 -4 1 \\ -2 -2 2\end{vmatrix}$
+$-8i-2j+6k-8k+2i+6j$
+$=-6i+4j-2k$
+area of triangle$=\frac{\sqrt{6^2+4^2+2^2}}{2}=\frac{\sqrt{366+16+4}}{2}=\frac{\sqrt{45}}{\sqrt{4}}$
+$=\sqrt{14}$
+
+
+
+\end{document}
