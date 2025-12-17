@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Vector equation of a plane}
+\obeylines
+
+Plane passing points A,B and C.
+has direction vectors AB and AC.
+equation of plane$=OA+\lambda\cdot AB+\my AC$
+or 
+crossproduct gives normal and cartessian equation of plane is
+$ax+by+cz+d=0$
+where a,b,c are factors of normal=crossproduct and d comes from substitution of any point from plane.
+Example. A plae passes points $A=(1,2,3)$, $B=(4,6,8)$ and $C=(1,1,1$
+a) Find equation of plane in vector form. 
+direction vectors $AB=\begin{vmatrix}4-1 \\ 6-2 \\ 8-3\end{vmatrix}=\begin{vmatrix}3 \\ 4 \\ 5\end{vmatrix}$ 
+and AC=$\begin{vmatrix}0 \\ -1 \\ -2\end{vmatrix}$
+vector form of plane=$OA+\lambda AB+\my AC$
+$=\begin{vmatrix}1\\2\\3\end{vmatrix}+\lambda\begin{vmatrix}3 \\4 \\5 \end{vmatrix}+\my \begin{vmatrix}0 \\ -1 \\ -2\end{vmatrix}$
+b) Find the parametric form of the plane
+$\begin{cases}x=1+3\lambda+0\my\\y=2+4\lambda+-1\my\\z=3+5\lambda-2\mu\end{cases}$
+c) Find the cartesian form of the plane
+$ax+by+cz+d=0$ and $a,b,c$ from normal of plane crossproduct
+$AB\times AC=\begin{vmatrix}i j k\\ 3 4 5\\ 0 -1 -2\end{vmatrix}$
+$=-8i-3k+5i+6j=-3i+6j-3k$
+plane $-3x+6y-3z+d=0$
+subst C=(1,1,1)
+$-3\cdot 1+6\cdot 1-3\cdot 1+d=0$
+$d=0$ ans: plane is $-3x+6y-3z+0=0$
+ex:1a,2,3,4 p 628
+1a) vector equation of plane=?
+with directions $\begin{vmatrix}2\\1\\4\end{vmatrix}$ and $\begin{vmatrix}-1\\2\\-1\end{vmatrix}$ passing $(0,2,-1)$
+equation=$point + \lambda\cdot direction+\my \cdot direction$
+$=\begin{vmatrix}0\\2\\-1\end{vmatrix}+\lambda \begin{vmatrix}2\\1\\4\end{vmatrix}+\my \begin{vmatrix}-1\\2\\-1\end{vmatrix}$
+2. a) Vector equation=$point+\lambda\cdot direction+\my \cdot direction$
+$A=(0,1,3)$ $B=(-1,2,0)$ $C=(3,-2,4)$
+directions are AB=$\begin{vmatrix}-1-0 \\2-1 \\ 0-3\end{vmatrix}=\begin{vmatrix}-1 \\ 1 \\ -3\end{vmatrix}$
+and AC=$\begin{vmatrix}3-0 \\ -2-1 \\ 4-3\end{vmatrix}=\begin{vmatrix}3 \\ -3 \\ 1\end{vmatrix}$
+Ans: Plane $\begin{vmatrix}0 \\1\\3\end{vmatrix}+\lambda \begin{vmatrix}1\\1\\-3\end{vmatrix}+\my \begin{vmatrix}3\\-3\\1\end{vmatrix}$
+2b) $\begin{cases}x=0-\lambda+3\my \\y=1\lambda-3\my \\z=3-3\lambda+\my\end{cases} where \lambda and \my are real numbers$
+c) $AB\times AC=\begin{vmatrix}i j k i j \\ -1 1 -3 -1 1 \ 3 -3 1 3 -3\end{vmatrix}$
+$=-8i-8j+0k$
+Cartesian equation is $-8x-8y+0z+d=0$ and subst point $A(0,1,3)$
+$-8\cdot 0-8\cdot 1+0+d=0$
+$d=8$
+Ans: Cartesian equation of plane is
+$-8-8y+8=0$ $||(-8)$
+$x+y=1$
+3a)
+
+
+\end{document}

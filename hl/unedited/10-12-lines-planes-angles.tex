@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Lines, planes and angles}
+\obeylines
+p 628.
+From linse and planes you can pick up direction vector and then find angle
+$cos(\alpha)=\frac{u\cdot v}{|u||v|}$
+
+note that plane must have normal vector and you need to add $0+\degree$
+Example: FInd the angle between lines
+$\frac{x-2}{3}=y=1-z$ and $x=2y=z-3$.
+line 1. $\begin{cases}t=\frac{x-2}{3}\\t=y\\t=1-z\end{cases}$
+-> $\begin{vmatrix}x=2+3t\\y=0+1\cdot t\\z=1-1\cdot t\end{vmatrix}$ has direction vector $3i+1j-1k$
+line 2: $\begin{vmatrix}p=x\\p=2y\\p=z-3\end{vmatrix}$
+-> $\begin{vmatrix}x=0+1\cdot p\\y=0+\frac{1}{2}p\\z=3+1\cdot p\end{vmatrix}$ has direction vector $1i+1/2j+1k$
+now $\begin{vmatrix}3\\1\\-1\end{vmatrix}\cdot\begin{vmatrix}1\\\frac{1}{2}\\1\end{vmatrix}=3\cdot1+1\cdot1/2+(-1)\cdot1)=3+0.5-1=2.5$
+magnitudes: $|3i+1j-1k|=\sqrt{3^2+1^2+(-1)^2}=\sqrt{11}$
+$|1i+1/2k+1k|=\sqrt{1^2+(1/2)^2+1^2}=\sqrt{2\frac{1}{4}}=\sqrt{\frac{9}{4}}=\frac{3}{2}$
+$nSolve(cos(x)=\frac{2.5}{\sqrt{11}\cdot\frac{3}{2}})=69.8332$
+Ans: 59.8
+b) Find the intersection point of same lines.
+$line 1=line 2$
+$linSolve(\begin{cases}2+3t=p\\t=\frac{1}{2}p\\1-t=3+p\end{cases},{t,p})$
+No solution found.
+
+o p 630 and p 633 ex 1a,b-2a,b
+do p630 ex1a) Find intersection of line $x-5=\frac{y+1}{2}=\frac{1-z}{3}$ and plane $2x-3y+z=-3$
+
+$\begin{cases}t=x-5\\t=\frac{y+1}{2}\\t=\frac{1-z}{3}\end{cases}$
+-> $\begin{cases}x=t+5\\y=-1+2\cdot t\\z=1-3\cdot t\end{cases}$
+Has direction vector $\begin{vmatrix}1\\2\\-3\end{vmatrix}$ and plane has normal vector $\begin{vmatrix}2\\ -3 \\ 1\end{vmatrix}$
+so angle between $nSolve(cos(\alpha)=\frac{1\cdot 2+2\cdot -4+-3\cdot 1}{\sqrt{1^2+2^2+3^2}\cdot\sqrt{2^2+4^2+1^2}}),a$
+$\alpha=1.21.661$
+Angle between line and plane is $1.21.7-90=31.7\degree$
+and intersection point=? substitute
+$\begin{cases}x=5+1t\\y=-1+2t\\z=1-3t\end{cases}$ into plane $2x-4y+z=-3$
+nSolve($2\cdot(5+5)-4\cdot(-1+2t)+1-3t=-3$)
+$=2$
+$\begin{cases}x=5+1\cdot 2=7\\y=-1+2\cdot 2=3\\z=1-3\cdot 2=-5\end{cases}$ Ans: point $(7,3,-5)$
+2. 
+line is parallel to plane
+that means normal of plane is perpendicular to line
+line:$\begin{cases}t=\frac{x}{m}\\t=\frac{y-1}{2}\\t=\frac{z+2}{4}\end{cases}$->$\begin{cases}x=0+m\cdot t\\y=1+2t\\z=-2+4t\end{cases}$ has direction vector $\begin{vmatrix}m \\ 2 \\ 4\end{vmatrix}$ and plane has normal $\begin{vmatrix}2 \\ m \\-3\end{vmatrix}$
+so dot product=0 for perpendicular
+$nSolve(m\cdot 2+2\cdot m+4\cdot -3=0,m)=3$
+Ans$m=3$
+
+\end{document}
