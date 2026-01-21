@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Finals of derivative of log-,exponential- and trigonometric functions}
+\obeylines
+$D sin(x)=cos(x)$
+$D cos(2x)=-sin(2x)\cdot 2$
+$D ln(x)=\frac{1}{x}$
+$D log_a(x)=\frac{1}{x\cdot ln(a)}$
+$D e^x=e^x$ exponential function
+$D e^{f(x)}=e^{f(x)}\cdot f'(x)$
+$D x^n=n\cdot x^{n-1}$ polynome func with exponent
+$D a^x=a^x\cdot ln(a)$ exponential function
+HL: $D arcsin(x)=\frac{1}{\sqrt{1-x^2}}$ see formulabooklet
+
+HL Differential calculus test 2
+1. Given that $f(x)=x^2-3x$ find $f'(x)$ from first principles; that is, use the limit definition of the derivative $f'(x)=lim_{h\to0}\frac{f(x+h)-f(x)}{h}$
+$f'(x)=2x-3$
+
+5.
+5a) $y=2^x\cdot cos(x)$
+$y'=\frac{dy}{dx}=e^x\cdot cos(x)+e^x\cdot(-sin(x))$
+$=e^x\cdot (cos(x)-sin(x)$
+$y''=\frac{d^2y}{dx^x}=D (e^x\cdot (cos(x)-sin(x)))$
+$=e^x\cdot (cos(x)-sin(x))-e^x\cdot (-sin(x)-cos(x))$
+$=2cos(x) or somethingidk i accidentally clicked undo$
+
+b) Domain $0<x<5$
+Ans: And based on graph GDC there is local max at point $(0.785,1.55)$ but not global max.
+Min at point $(3.93,-35.9)$
+method 2 could be that $y'=0$
+$nSolve(e^x\cdot(cos(x)-sin(x))=0,x)=0.785$
+$y=e^x\cdot cos(x)|x=0.785398=1.55088$
+$y''(0.785)=2\cdot cos(x)=e^x|x=0.785=3.10177$
+$>0$ so test for max
+5c) inflexion point has $y''(x)=0$
+subst. from a) gives 
+$2\cdot e^x\cdot cos(x)=0$ null product law
+$e^x=0$ or $cos(x)=0$
+never    $x=\begin{cases}\frac{\pi}{2}\\\frac{3\pi}{2}\end{cases}$ from unit circle x-cord
+and $y=\frac{\pi}{2}\cdot cos(\frac{\pi}{2})=0$
+Ans inflexion at points $(\frac{\pi}{2},0)$ and $(\frac{3\pi}{2},0)$
+
+6. A rectangle is circumcized by the graph of the parabola $y=3x-\frac{x^2}{2}$ such that the two upper vertices of the rectangle are on the graph of the parabola and the two lower vertices are on the x-axis (as shown in the diagram). The lower left vertex of the rectangle ahs coordinates $(c,0)$
+a) Show that the function, A, for the area of the rectangle expressed in terms of c is $A(c)=c^3-9c^2+18c$
+b) Find the width and height fo the rectangle with the maximum area.
+c) Find the maximum area.
+
+
+
+\end{document}

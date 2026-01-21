@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Implicit differentiation and related rates}
+\obeylines
+p 288
+
+note $y=y(x)$ has differentiation
+$\frac{d}{dx}(y)=\frac{dy}{dx}y'\cdot dx$
+and dx is rate of change of variable x.
+Example: Find $\frac{dy}{dx}$ by differentiation implicitly
+$y^2-3x^2=1 ||\frac{d}{dx}$.
+$2\cdot (y)^1\cdot\frac{dy}{dx}-3\cdot 2x^1=0$ solve for $\frac{dy}{dx}$
+$2y\cdot\frac{dy}{dx}=6x||:2y$
+$\frac{dy}{dx}=\frac{6x}{2y}$
+$\frac{dy}{dx}=\frac{3x}{y}$
+Related rates:
+(forgor)
+
+7. p 294
+from right triangle $a^2+b^2=h^2||\frac{d}{dt}$
+$2(a)^1\cdot\frac{da}{ddt}+2\cdot b\frac{db}{dt}=2h\cdot\frac{dh}{dt}$
+at a=15,b=20,h=$\sqrt{a^2+b^2}=\sqrt{15^2+20^2}=\sqrt{25}$ substitute
+$2\cdot 15\cdot 5+2\cdot 20\cdot (-4)=2\cdot 25\cdot \frac{dh}{dt}||:50$
+$\frac{dh}{dt}=\frac{2\cdot15\cdot5+2\cdot20\cdot-4}{50}=\frac{-1}{5}=-0.2$
+Ans: h decreases by $-0.2cm/s$ 
+ex 8.
+balloon $V=\frac{4}{3}\cdot \pi\cdot r^3$
+$\frac{dr}{dt}=?$ at $\frac{dV}{dt}=+7cm^3/s$ and $V=36\pi$
+so $r=\sqrt[3]{\frac{V\cdot 3}{4\pi}}=\sqrt[3]{\frac{36\pi\cdot 3}{4\pi}}=\sqrt[3]{9\cdot3}=3$
+lets differentiate.
+$V=\frac{4}{3}\cdot \pi\cdot r^3$
+$\frac{dV}{dt}=\frac{4}{3}\cdot3\cdot r^2\cdot\frac{dr}{dt}$ and substitute.
+$7=\frac{4\pi}{3}\cdot3\cdot 3^2\cdot\frac{dr}{dt}$ and solve.
+$\frac{dr}{dt}=\frac{7}{4\pi\cdot9}=0.06189$
+Ans: radius increases by $0.0619cm/s$.
+
+Differential calculus test 3.
+1. Find $\frac{dy}{dx}$ for the curve with the equation $2x^2y+3y^2=16$.
+ex 1,6,7
+$2\cdot 2x^1\cdot y+2\cdot x^2\cdot\frac{dy}{dx}+3\cdot2\cdot y^1\cdot\frac{dy}{dx}=0$
+$4xy+(2x^2+6y)(\frac{dy}{dx})=0$
+$(2x^2+6y)(\frac{dy}{dx})=-4xy$
+Ans: $\frac{dy}{dx}=\frac{-4xy}{2x^2+6y}$
+
+7.
+$x^2+x\cdot y+y^2=3 ||\frac{d}{dx}$, since $\frac{dy}{dx}$ is a gradient 
+$2\cdot x^1+\frac{dy}{dx}\cdot y+x\cdot\frac{dy}{dx}+2\cdoty'\cdot\frac{dy}{dx}=0$
+$2x+1y+(x+2y)\cdot\frac{dy}{dx}=0$
+$(x+2y)\cdot(\frac{dy}{dx})=-2x-y$
+$\frac{dy}{dx}=\frac{-2x-y}{x+2y}$ and substitute point (-1,k) like 
+$x=-1$ $y=k$
+gradient=$\frac{dy}{dx}=\frac{-2\cdot(-1)-k}{-1+2k}=\frac{2-k}{2k-1}$
+7b) tangent is parallel to x-axis means that gradient=0 so
+$\frac{2-k}{2k-1}=0$ if numerator $2-k=0$,$k=2$ and denominator $2k-1\neq0,k\neq1/2$
+Ans: k=2
+
+\end{document}

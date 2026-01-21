@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\   usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Integration and area bounded by curve}
+\obeylines
+for a positive function $f(x)$ and $a<x<b$
+area bounded by curve $\int_{a}^{b}f(x) dx$
+and for a negative function
+$area=-\int_{a}^{b}f(x) dx$
+bounded are may have upper and lwoer limit from zeroes of function
+$f(x)=0$
+$x=a$ or $x=b$
+Example find the area bounded by curve $f(x)=-(x+2)(x-3).$
+curve is parabola, downwards
+zeroes: $x+2=0$ $x-3=0$
+$x=-2$  $x=3$
+paper 1: Area=$\int_{-2}^{3}(-(x+2)(x-3))dx$
+$=\int_{-2}^{3}(-x^2+3x-2x+6)dx=\int_{-2}^{3}(-x^2+x+6)dx$
+$=-\frac{1}{3}x^3+\frac{1}{2}x^2+6x$
+$=\frac{-1}{3}\cdot 3^3+\frac{1}{2}\cdot 3^2+6\cdot 3-(\frac{-1}{3}(-2)^3+\frac{1}{2}\cdot(-2)^2+6\cdot-2)$
+
+integration:3 exam-line questions.
+1. $f(x)=ln(\frac{2}{e^x+1})$
+a) Domain is all real numbers.
+Range $\lim_{x\to-\infty}(ln(\frac{2}{e^x+1}))$
+$ln(2)=0.069$
+b) 
+Area=$4=-\int_{0}^{k}ln(\frac{2}{e^x+1})dx=$
+$=-2\int_{0}^{k}(ln(1)-ln(e^x+1))dx$
+nSolve.
+Ans: $k\approx3.32$
+
+1. The graph represents the funcntion
+$f: x\mapsto p cos(x), p\in\mathbb{N}$
+means that $f(x)=p\cdot cos(X)$
+where p is any natural number $(=0,1,2,3,...)$
+a) ans: p=1
+b) area=?=$\int_{0}^{\frac{\pi}{2}}(1\cdot cos(x))dx$
+$[sin(x)]$
+$sin(\pi/2)-sin(0)$
+$=1-0=1$
+
+
+
+\end{document}

@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Integrals and volume of solid of revolution}
+\obeylines
+volume=$\pi\int_{a}^{b}(f(x))^2dx=$
+$\int(area of cross-section)dx$
+where $a<x<b$ and $f(x)$ is rotated 360$\degree$ about x-axis.
+
+ex2. $y=sin(3x) 0\leq x\leq \frac{\pi}{4}$ rotates about x-axis.
+volume=$\int_{0}^{\frac{\pi}{4}}(sin(3x)^2)dx=1.4955$
+exact volume=$\pi\int_{0}^{\frac{\pi}{4}}(sin3x)^2dx$
+$D (sin(3x))=cos(3x)\cdot3$
+try to change $sin^2(3x)$
+formula ooklet $cos(2a)=1-2sin^2(a)$
+$sin^2(a)=\frac{1-cos(2a)}{2}$
+now $\pi\cdot\int_{0}^{\frac{\pi}{4}}(sin(3x))^2dx=\pi\cdot\int_{0}^{\frac{\pi}{4}}(\frac{1-cos(6x)}{2})dx$
+$\frac{\pi}{2}\int_{0}^{\frac{\pi}{4}}(1-cos(6x))dx$
+$\frac{\pi}{2}[x-\frac{1}{6}\cdot sin(6x)]$
+$=\frac{\pi}{2}(\frac{\pi}{4}-\frac{1}{6}\cdot sin(6-\frac{\pi}{4})-(0-sin(0)))$
+$=\frac{\pi^2}{8}-\frac{\pi}{12}sin(\frac{3\pi}{2})$
+$=\frac{\pi^2}{8}-\frac{\pi}{12}(-1)=\frac{\pi^2}{8}+\frac{\pi}{12}$
+
+ex3. volume$=\pi\cdot\int_{1}^{e}(\frac{ln(x)}{x})^2dx=0.504$
+$=\pi\cdot\int_{1}^{e}(\frac{ln(x)}{x})^2dx$
+$=\pi\cdot\int_{1}^{e}((\frac{1}{x^2})\cdot(ln(x))^2)dx$
+partial integration
+$\int(u\cdot v')dx=u\cdot v-\int(v\cdot u')dx$
+subst. $u=(ln(x))^2$ and $v'=\frac{1}{x^2}=x^{-2}$
+so $u'=2\cdot(ln(x))^{2-1}\cdot\frac{1}{x}=\frac{2}{x}ln(x)$
+and $v=\int x^{-2}dx=-x^{-1}=\frac{-1}{x}$
+now $=\pi\cdot\int_{1}^{e}((\frac{1}{x^2})\cdot(ln(x))^2)dx$
+$=\pi[(ln(x))^2\cdot\frac{-1}{x}-\int_{e}^{1}(\frac{2}{x}ln(x)\cdot\frac{-1}{x})dx]$
+$=\pi[\frac{-(ln(x))^2}{x}+2\int_{1}^{e}\frac{ln(x)}{x^2}dx]$
+partial integration again 12 marks
+$\int_{1}^{e}\frac{ln(x)}{x^2}dx=\int(u\cdot v')dx$
+subst. $u=ln(x) u'=\frac{1}{x}$
+$v'=x^{-2}$ and $v=-x^{-1}$
+$\int_{1}^{e}\frac{ln(x)}{x^2}dx=\int(u\cdot v')dx=$
+$ln(x)\cdot\frac{-1}{x}-\int_{e}^{1}(\frac{1}{x}\cdot\frac{-1}{x})dx=\frac{-ln(x)}{x}+\int_{1}^{e}x^{-2}dx$
+$=\frac{-ln(x)}{x}-x^{-1}$
+subst. $u=ln(x)$ and $u'=\frac{1}{x}$
+$v'=x^{-2}$ $v=-x^{-1}$
+so $V=\pi[\frac{-(ln(x))^2}{x}+2(\frac{-ln(x)}{x}-\frac{1}{x})]$
+so $V=\pi(\frac{-(ln(e))^2}{e}+2(\frac{-ln(e)}{e}-\frac{1}{e}))-\pi(\frac{-(ln(1))^2}{1}+2(\frac{-ln(1)}{1}-\frac{1}{1}))$
+$=\pi(\frac{-1}{e}-\frac{2}{e}-\frac{2}{e}+0+2(-1))$
+$=2\pi-\frac{-5}{e}\pi$
+
+ex4. $\int(x\sqrt{\frac{1}{2}x+1})dx$
+$=$
+
+\end{document}

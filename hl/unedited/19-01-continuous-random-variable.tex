@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{integral and probability}
+\obeylines
+Continuous random variables p 706
+(=jatkuva satunnaismuuttuja)
+X is measured like decminal numbers
+1) probability density (like frequency) function $f(x)\geq 0$ and $\int_{-\infty}^{\infty}f(x)=dx=100\%=1$
+2) mean$=\mu=E(X)=$expected value of random variable
+$\int_{a}^{b}(x\cdot f(x))dx$
+3) variance $\sigma^2=\int_{a}^{b}((x-\mu)^2\cdot f(x))dx$
+4) standard deviation $\sigma=\sqrt{\sigma^2}=\sqrt{variance}$
+5) variance = $E(x^2)-(E(x))^2$
+6) cumulative distribution function
+$F(X)=\int_{-\infty}^{x}f(x)dx=P(X<x)$
+and $F'(x)=f(x)$
+7) Median m can be solved from
+$\int_{-\infty}^{m}f(x)dx=50\%=\frac{1}{2}$
+8) mode=most typical value x, with maximum $f(x)$
+
+Example Find so that $f(x)=\begin{cases}a\cdot x,2<x<5\\0, elsewhere\end{cases}$
+is a probability density function. 
+density function must have two things.
+it is positive and add up to 100\%
+$f(x)=\begin{cases}a\cdot x,2<x<5\\0, elsewhere\end{cases}, so a\geq0$
+$\int_{-\infty}^{\infty}f(x)dx=1$ subst.
+$\int_{-\infty}^{2}0dx+\int_{2}^{5}(a\cdot x)dx+\int_{5}^{\infty}0dx$
+$=0+[a\cdot\frac{1}{2}x^2]+0$
+$=\frac{a}{2}(5^2-2^2)=\frac{a}{2}(25-4)=\frac{21a}{2}$
+so $\frac{21a}{2}=1$
+$a=\frac{1}{21}$
+b) Find $P(3\leq X\leq4)$
+$=F(4)-F(3) or$
+$=\int_{3}^{4}(\frac{2}{21}\cdot x)dx=0.33333$
+c) Find the mean.
+$\mu=E(X)=\int_{-\infty}^{\infty}(x\cdot f(x))dx$
+$=\int_{2}^{5}x(\frac{2}{21}x)dx$
+d) Find the median.
+$solve(\int_{2}^{m}f(x)dx=\frac{1}{2},m)=3.807$
+
+excercises p 708 and 711 ex1-2
+p708 ex1. 
+$nSolve(\int_{-2}^{0}(k\cdot(k+2)^2)dx+\int_{0}^{\frac{4}{3}}(4k)dx=1,k)=0.125$
+$\frac{1}{8}=0.125$
+
+ex. 2. 
+PDF is density function $\begin{cases}
+  k\cdot(3-x),0\leq x\leq3
+  0, otherwise
+\end{cases}$
+a) sketch
+b) nSolve($\int_{0}^{3}(k\cdot(3-x))dx=1,k$)=$0.2222$)
+$\frac{2}{9}=0.2222$
+or from sketch and area of triangle
+$=\frac{base\cdot height}{2}$
+$=\frac{3\cdot(3k)}{2}=1$
+$k=\frac{2}{9}$
+c) P($1.2\leq X\leq 2.3$)$=\int_{1.2}^{2.3}(\frac{2}{9}\cdot(3-x))dx=0.3055$
+p 711. 
+ex1. 
+
+
+
+
+\end{document}
