@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{mathtools,amssymb,amsthm}
+
+\title{The day's notes}
+\author{Samuel Hautamäki}
+%\date{October 2025}
+\begin{document}
+\subsection{Normal distribution}
+\obeylines
+
+integral= area of density function=
+$\int_{a}^{b}f(x)dx=F(b)-F(a)=P(a\leq X\leq b)$
+use symmetry about mean$=\mu$
+deviation$=\sigma$
+HL normal distribution $f(x)=\frac{1}{\sigma\sqrt{2\pi}}\cdot e^{\frac{-x(-\mu)^2}{2\pi^2}}$
+or sl $normCdf(a,b,\mu,\sigma)=\int_{a}^{b}f(x) dx$
+
+hl p 722,724
+
+ex 1. 
+a) $mean=\mu=2,deviation=\sigma=3$
+$P(0.5<X<1.5=0.125$
+b) $P(X<0.5)=normCdf(-\infty,0.5,2,3)=0.3085$
+c) $P(X\geq2)=normCdf)2,\infty,2,3=0.5$
+
+HL differential equations
+type 1) separate $\frac{dy}{dx}=f(x,y)$
+$\int h(y) dy = \int g(x) dx$
+example solve
+$\frac{dy}{dx}=\frac{2x^2}{y^2}$
+$y^2dy=2x^2$
+$\int y^2dy=\int 2x^2dx$
+$\frac{y^3}{3}=\frac{2}{3}x^3+ c$ solve for y. 
+$y^3=2x^3+ 3c$
+Ans: $y=\sqrt[3]{2\cdot x} + C$
+
+
+
+\end{document}
